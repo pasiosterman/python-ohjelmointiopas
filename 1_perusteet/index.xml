@@ -12,8 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/1_perusteet/1_esittely/</guid>
-      <description>Alkusanat Tämä on kevyt ohjelmointiopas Python ohjelmointikielellä. Päädyin kirjoittamaan oppaan suomenkielellä koska englanninkielisiä oppaita löytyy jo pilmin pimein. Uskon myös, että äidinkielellä asioiden opiskelu on monelle helpompaa. Pyrin kuitenkin tuomaan esille suluissa myös joidenkin asioiden englanninkielisiä termejä, jotta niistä on helpompi hakea lisätietoja.
-Oppaassa pyrin käymään asiat yleisluontoisesti läpi takertumatta liikaa nippelitietoihin tai kielen erityisominaisuuksiin. Nämä ovat mielestäni sellaisia asioita joihin kannattaa perehtyä vasta kun perusteet ovat hallussa tai niitä oikeasti tarvitsee.</description>
+      <description>Alkusanat Tämä on kevyt opas Python ohjelmointikielelle. Päädyin kirjoittamaan oppaan suomen kielellä koska englanninkielisiä oppaita löytyy jo pilmin pimein. Uskon myös, että äidinkielellä asioiden opiskelu on monelle helpompaa. Pyrin kuitenkin tuomaan esille suluissa myös joidenkin asioiden englanninkielisiä termejä, jotta niistä on helpompi hakea lisätietoja. Oppaassa pyrin käymään asiat yleisluontoisesti läpi takertumatta liikaa nippelitietoihin tai kielen erityisominaisuuksiin. Nämä ovat mielestäni sellaisia asioita joihin kannattaa perehtyä vasta kun perusteet ovat hallussa tai niitä oikeasti tarvitsee.</description>
     </item>
     
     <item>
@@ -33,9 +32,8 @@ Mikäli tämä unohtuu voit muokata asennusta ajamalla asennustiedoston uudestaa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/1_perusteet/3_komentorivi/</guid>
-      <description>Komentorivin käyttäminen saattaa kuulostaa henkilöille jotka ovat tottuneet graafisiin käyttöliittymiin jopa antiikkiselta. Mutta todellisuudessa komentoriviä käytetään nykypäivänä todennäköisesti enemmän kuin koskaan.
-Syynä tähän on mm. automaatio. Ohjelmoija tekee koodiin muutoksia ja lähettää ne
-Käyttäjä saattaa yhdellä graafisen käyttöliittymän napinpainalluksella aloittaa monimutkaisen tapahtumasarjan, jossa tietokone ajaa komentorivin avulla useita pienohjelmia saavuttaen lopulta käyttäjän haluaman lopputuloksen. Nämä pienohjelmat voivat olla käyttöjärjestelmän tiedostonhallintaan liittyviä toimintoja, internet palveluita ja toteutettu jollain ihan täysin eri ohjelmointikiellellä kun varsinanen käyttöliittymä.</description>
+      <description>Graafisiin käyttöliittymiin tottuneille komentorivi saattaa kuulostaa suorastaan antiikkiselta, mutta todellisuudessa komentoriviä käytetään enemmän kuin koskaan. Suurin syy tähän on kasvanut tarve automatisoida asioita erilaisten komentosarjojen avulla. Toisena syynä on halu jakaa sovellukset pienempiin helpommin hallittaviin osiin jolloin graafinen käyttöliittymä voi toimia erillisenä kokonaisuutena jonka voi tarvittaessa vaihtaa toiseen.
+Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toiminnallisuuksiin jotä ei perus käyttöliittymästä syystä tai toisesta löydy.</description>
     </item>
     
     <item>
