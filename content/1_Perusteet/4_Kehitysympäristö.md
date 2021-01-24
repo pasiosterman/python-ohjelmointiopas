@@ -23,7 +23,7 @@ Kun asennus on valmis avaa Visual Studio Code. Avaa laajennusvalikko (engl. Exte
 - Laajennusvalikon saa auki myös näppäinyhdistelmällä __CTRL+SHIFT+X__
 - Laajennuksista saa lisätietoja niitä klikkaamalla.
 
-![Python laajennus](Kuvat/Python_PyLance_Asennus.png)
+![Python laajennus](/kuvat/pylance-asennus.png)
 *(Perusasetuksilla valikko on vasemmalla, olen siirtänyt sen omassa asennuksessa oikealle)*
 
 1. __Python laajennus__
@@ -35,7 +35,7 @@ Kun asennus on valmis avaa Visual Studio Code. Avaa laajennusvalikko (engl. Exte
 
 ## Projektikansion avaaminen VSCodessa
 
-Avaa viime [osiossa](3_Komentorivi.md) luotu __PythonOpas__ kansio Visual Studio Codessa. Tämä onnistuu valitsemalla ylävalikosta 
+Avaa viime [osiossa](../3_komentorivi/) luotu __PythonOpas__ kansio Visual Studio Codessa. Tämä onnistuu valitsemalla ylävalikosta 
 > File > Open Folder
 
 Nyt pitäisi avautua perinteinen kansion valintanäkymä josta voit navigoida PythonOpas kansioon. Mikäli laitoit kansion suosittelemaani paikkaan sen pitäisi löytyä seuraavasta polusta:
@@ -50,14 +50,14 @@ PythonOpas kansion pitäisi avautua sisältöineen Visual Studio Codeen.
 Visual Studio Code sisältää sisäänrakennetun komentorivin jonka saa esiin näppäinyhdistelmällä __Ctrl + ö__. Vaihtoehtoisesti komentorivin saa esiin myös ylävalikosta.
 > View > Terminal
 
-Komentorivin pitäisi avautua suoraan VSCodessa auki olevaan projektikansioon. Voit suorittaa viime [osiossa](3_Komentorivi.md) luodun __TerveMaailma.py__ kooditiedoston kirjoittamalla komennon python tiedostonimi eli: 
+Komentorivin pitäisi avautua suoraan VSCodessa auki olevaan projektikansioon. Voit suorittaa viime [osiossa]../3_komentorivi/) luodun __TerveMaailma.py__ kooditiedoston kirjoittamalla komennon python tiedostonimi eli: 
 
 ```bash
 python TerveMaailma.py
 ```
 
-![VSCode komentorivi](/Kuvat/VSCode_Komentorivi.png)
+![VSCode komentorivi](/kuvat/perusteet/vscode-komentorivi.png)
 
 Toinen vaihtoehto olisi avata tiedosto ja painaa yläkulmasta löytyvää play nappulaa jolloin VSCode ajaa sillä hetkellä auki olevan python kooditiedoston komentorivillä.  
 
-![VSCode komentorivi](Kuvat/VSCode_PlayNappula.png)
+![VSCode komentorivi](/kuvat/perusteet/vscode-play-nappula.png)

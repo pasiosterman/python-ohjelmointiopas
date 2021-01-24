@@ -3,17 +3,10 @@ title: "3_Komentorivi"
 draft: false
 ---
 
-Komentorivin käyttäminen saattaa kuulostaa henkilöille jotka ovat tottuneet graafisiin käyttöliittymiin jopa antiikkiselta. Mutta todellisuudessa komentoriviä käytetään nykypäivänä todennäköisesti enemmän kuin koskaan. 
-
-Syynä tähän on mm. automaatio. Ohjelmoija tekee koodiin muutoksia ja lähettää ne 
-
-
-Käyttäjä saattaa yhdellä graafisen käyttöliittymän napinpainalluksella aloittaa monimutkaisen tapahtumasarjan, jossa tietokone ajaa komentorivin avulla useita pienohjelmia saavuttaen lopulta käyttäjän haluaman lopputuloksen. Nämä pienohjelmat voivat olla käyttöjärjestelmän tiedostonhallintaan liittyviä toimintoja, internet palveluita ja toteutettu jollain ihan täysin eri ohjelmointikiellellä kun varsinanen käyttöliittymä. 
+Graafisiin käyttöliittymiin tottuneille komentorivi saattaa kuulostaa suorastaan antiikkiselta, mutta todellisuudessa komentoriviä käytetään enemmän kuin koskaan. Suurin syy tähän on **kasvanut tarve automatisoida asioita** erilaisten komentosarjojen avulla. Toisena syynä on **halu jakaa sovellukset pienempiin helpommin hallittaviin osiin** jolloin graafinen käyttöliittymä voi toimia erillisenä kokonaisuutena jonka voi tarvittaessa vaihtaa toiseen. 
 
 Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toiminnallisuuksiin jotä ei perus käyttöliittymästä syystä tai toisesta löydy. 
 Esimerkkejä: Blender3D, Photoshop, Pelit ja niiden modaustyökalut, 
-
-<br />
 
 ## Komentorivillä navigointi
 
@@ -70,13 +63,13 @@ Jokaisella asemalla on oma erillinen "nykyinen asema"(__*Current directory*__) j
 
 <br />
 
-![Komentorivi Powershell](Kuvat/Komentorivi_Powershell.png)
+![Komentorivi Powershell](/kuvat/perusteet/komentorivi-powershell.png)
 
 Nykyisen kansion sisällön saa selville kirjoittamalla __Dir__ jolloin komentoriville tulostuu kaikki kansion sisällä olevat alikansiot ja tiedostot. 
 
 <br />
 
-![Komentorivi cmd](Kuvat/Komentorivi_cmd.png)
+![Komentorivi cmd](/kuvat/perusteet/komentorivi-cmd.png)
 
 <br />
 
@@ -148,12 +141,8 @@ print("Terve maailma!")
 python TerveMaailma.py
 ```
 
-![Terve Maailma](Kuvat/TerveMaailma.png)
+![Terve Maailma](/kuvat/perusteet/terve-maailma.png)
 
 Komentoriville pitäisi tulostua perinteinen ["Hello World"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) suomeksi. HelloWorld esimerkki on yleensä ensiaskel uuden ohjelmointikielen opiskelussa. HelloWorld esimerkit voivat kertoa yllättävän paljon ohjelmointikielestä ja esimerkin suorittaminen on yleensä hyvä testi jonka perusteella voi päätellä, että kaikki on ainakin tähän mennessä kunnossa.
 
 Periaattessa tämä on kaikki mitä tarvitaan python koodin kirjoittamiseen ja ajamiseen, mutta seuraavassa osiossa
-
-<br />
----
- &#8592; [2. Python asennus](2_PythonAsennus.md) | [4. Kehitysympäristö](4_Kehitysympäristö.md) &#8594; 

@@ -1,5 +1,3 @@
-# Etusivu
+# Ohjelmointiopas Pythonille. 
 
-Toimiiko?
-
-testing testing
+Opas on vielä pahasti kesken, tuleppa myöhemmin uudestaan.

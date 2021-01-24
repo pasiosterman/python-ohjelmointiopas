@@ -4,9 +4,8 @@ draft: false
 ---
 
 ## Alkusanat
-Tämä on kevyt ohjelmointiopas __Python__ ohjelmointikielellä. Päädyin kirjoittamaan oppaan suomenkielellä koska englanninkielisiä oppaita löytyy jo pilmin pimein. Uskon myös, että äidinkielellä asioiden opiskelu on monelle helpompaa. Pyrin kuitenkin tuomaan esille suluissa myös joidenkin asioiden englanninkielisiä termejä, jotta niistä on helpompi hakea lisätietoja. 
 
-Oppaassa pyrin käymään asiat yleisluontoisesti läpi takertumatta liikaa nippelitietoihin tai kielen erityisominaisuuksiin. Nämä ovat mielestäni sellaisia asioita joihin kannattaa perehtyä vasta kun perusteet ovat hallussa tai niitä oikeasti tarvitsee. Pyrin myös kirjottamaan koodin tavalla joka vastaa lähemmin muita ohjelmointikieliä mikä toivottavasti auttaa opetellessa myös muita ohjelmointikieliä.  
+Tämä on kevyt opas __Python__ ohjelmointikielelle. Päädyin kirjoittamaan oppaan suomen kielellä koska englanninkielisiä oppaita löytyy jo pilmin pimein. Uskon myös, että äidinkielellä asioiden opiskelu on monelle helpompaa. Pyrin kuitenkin tuomaan esille suluissa myös joidenkin asioiden englanninkielisiä termejä, jotta niistä on helpompi hakea lisätietoja. Oppaassa pyrin käymään asiat yleisluontoisesti läpi takertumatta liikaa nippelitietoihin tai kielen erityisominaisuuksiin. Nämä ovat mielestäni sellaisia asioita joihin kannattaa perehtyä vasta kun perusteet ovat hallussa tai niitä oikeasti tarvitsee. Pyrin myös kirjottamaan koodin tavalla joka vastaa lähemmin muita ohjelmointikieliä mikä toivottavasti auttaa opetellessa myös muita ohjelmointikieliä.  
 
 ## Ohjelmoinnin opiskelu
 
