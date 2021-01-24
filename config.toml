@@ -1,4 +1,4 @@
-baseURL = "https://pasiosterman.github.io/python-ohjelmointiopas/"
+relativeURLs = true
 languageCode = "fi-FI"
 title = "Python ohjelmointiopas"
 theme = "code-focus"

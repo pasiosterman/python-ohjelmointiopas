@@ -56,7 +56,7 @@ Komentorivin pitäisi avautua suoraan VSCodessa auki olevaan projektikansioon. V
 python TerveMaailma.py
 ```
 
-![VSCode komentorivi](Kuvat/VSCode_Komentorivi.png)
+![VSCode komentorivi](/Kuvat/VSCode_Komentorivi.png)
 
 Toinen vaihtoehto olisi avata tiedosto ja painaa yläkulmasta löytyvää play nappulaa jolloin VSCode ajaa sillä hetkellä auki olevan python kooditiedoston komentorivillä.  
 

@@ -33,13 +33,13 @@ __Sijainit Windowsilla oletusasetuksilla (versiolle 3.8)__
 
 * Käytä Windowsin käynnistä valikon(__Start menu__) hakua ja etsi "Muokkaa järjestelmän ympäristömuuttujia" (__"Edit the system environment variables"__). 
 
-![Windows Haku](/Kuvat/Muokkaa_ympäristömuuttujia_1.png)
+![Windows Haku](/kuvat/Muokkaa_ympäristömuuttujia_1.png)
 
 <br />
 
 * Paina avautuvasta valikosta Ympäristömuuttujat(__Environment Variables__) nappulaa
 
-![Järjestelmän ominaisuudet valikko](/Kuvat/Muokkaa_ympäristömuuttujia_2.png)
+![Järjestelmän ominaisuudet valikko](/kuvat/Muokkaa_ympäristömuuttujia_2.png)
 
 <br />
 
@@ -48,7 +48,7 @@ __Sijainit Windowsilla oletusasetuksilla (versiolle 3.8)__
 >__Huom:__ Järjestelmämuuttujat(__System variables__) ovat saatavilla kaikille koneen käyttäjille, käyttäjämuuttujat ovat taas saatavilla ainoastaan nykyiselle käyttäjälle. Voit halutessasi tehdä muutoksen myös käyttäjän muuttujiin (__User variables__)
 
 
-![Ympäristömuuttujat valikko](/Kuvat/Muokkaa_ympäristömuuttujia_3.png)
+![Ympäristömuuttujat valikko](/kuvat/Muokkaa_ympäristömuuttujia_3.png)
 
 <br />
 
@@ -66,4 +66,4 @@ __Sijainit Windowsilla oletusasetuksilla (versiolle 3.8)__
         6. Paina OK molempiin ikkunoihin sulkeaksesi ne ja vahvistaaksesi valinnat.
     
 
-![Ympäristömuuttujan muokkaus valikko](/Kuvat/Muokkaa_ympäristömuuttujia_4.png)
+![Ympäristömuuttujan muokkaus valikko](/kuvat/Muokkaa_ympäristömuuttujia_4.png)
