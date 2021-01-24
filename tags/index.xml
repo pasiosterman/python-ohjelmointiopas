@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Python ohjelmointiopas</title>
-    <link>https://pasiosterman.github.io/python-ohjelmointiopas/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Python ohjelmointiopas</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fi-FI</language><atom:link href="https://pasiosterman.github.io/python-ohjelmointiopas/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>fi-FI</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

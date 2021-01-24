@@ -3,56 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/</loc>
+    <loc>/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/1_esittely/</loc>
+    <loc>/1_perusteet/1_esittely/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/</loc>
+    <loc>/1_perusteet/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/2_pythonasennus/</loc>
+    <loc>/1_perusteet/2_pythonasennus/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/3_komentorivi/</loc>
+    <loc>/1_perusteet/3_komentorivi/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/</loc>
+    <loc>/1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/5_muuttujat/</loc>
+    <loc>/1_perusteet/5_muuttujat/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/6_tyyppimuunnokset/</loc>
+    <loc>/1_perusteet/6_tyyppimuunnokset/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/muut/</loc>
+    <loc>/muut/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/muut/pathmuuttujanmuokkaus/</loc>
+    <loc>/muut/pathmuuttujanmuokkaus/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
   <url>
-    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/muut/termeja/</loc>
+    <loc>/muut/termeja/</loc>
   </url>
   
 </urlset>
