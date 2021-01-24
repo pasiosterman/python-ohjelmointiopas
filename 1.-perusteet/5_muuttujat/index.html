@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Python ohjelmointiopas - 5. Muuttujat</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+</head><body>
+    <div class="left-window">
+        <div class="content"><h1>5. Muuttujat</h1><p>Ohjelmoinnissa muuttujat koostuvat tunnisteesta (<strong>engl. identifier</strong>) ja muuttujan sisältämästä arvosta (<strong>eng. value</strong>). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">nimi</span> <span class="o">=</span> <span class="s2">&#34;Matti Meikäläinen&#34;</span>
+<span class="n">syntymavuosi</span> <span class="o">=</span> <span class="mi">1994</span>
+<span class="n">paino</span> <span class="o">=</span> <span class="mf">80.5</span>
+<span class="n">elossa</span> <span class="o">=</span> <span class="bp">True</span>
+</code></pre></div><p>Ylläolevassa esimerkissä esitellään <strong>4 muuttujaa</strong> joihin sijoitetaan yhtäsuuruusmerkki(=) sijoitusoperaattorilla (<strong>engl. Assignment Operator</strong>) haluttu arvo. Alla havainnollistava taulukko neljästä esitellystä muuttujasta.</p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">paino</span> <span class="o">=</span> <span class="mf">80.5</span>
+<span class="n">paino</span> <span class="o">=</span> <span class="n">paino</span> <span class="o">+</span> <span class="mf">1.5</span>
+</code></pre></div><!-- raw HTML omitted -->
+<p>Ylläolevassa koodissa viitataan paino-nimisen muuttujan sisältämään arvoon ja lisätään tähän 1.5kg. Kun lopputulos on saatu sijoitetaan tämä takaisin paino-nimiseen muuttujaan jolloin arvo päivittyy. Halutessa voimme säilyttää vanhan painon sijoittamalla lopputuloksen uuteen muuttujaan.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">paino</span> <span class="o">=</span> <span class="mf">80.5</span>
+<span class="n">uusipaino</span> <span class="o">=</span> <span class="n">paino</span> <span class="o">+</span> <span class="mf">1.5</span>
+</code></pre></div><!-- raw HTML omitted -->
+<h1 id="tietotyypit">Tietotyypit</h1>
+<p>Tietotyyppi on muuttujan arvon ominaisuus joka kertoo tietokoneelle minkälaisesta tiedosta on kyse ja miten sitä voi käsitellä. Pythonin sisäänrakennettuihin perustietotyyppeihin kuuluu mm. kokonaisluku, liukuluku, merkkijono ja totuusarvo.</p>
+<p>Luo uusi tiedosto ja anna sen nimeksi vaikka muuttujat.py jotta pääset itse kokeilemaan ja muokkaamaan seuraavia koodiesimerkkejä käytännössä.</p>
+<h2 id="kokonaisluku-engl-integer-int">kokonaisluku (engl. integer, int)</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">arvo1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">arvo2</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">summa</span> <span class="o">=</span> <span class="n">arvo1</span> <span class="o">+</span> <span class="n">arvo2</span>
+<span class="k">print</span><span class="p">(</span><span class="n">summa</span><span class="p">)</span>
+</code></pre></div>
+        </div>
+    </div>
+    <div class="right-window">
+        <div class="navigation">
+            <h1><a href="http://example.org/">Python ohjelmointiopas</a></h1><ul><li>1. Perusteet<ul><li><a href="/1.-perusteet/1_esittely/">1. Esittely</a></li><li><a href="/1.-perusteet/2_pythonasennus/">2. Pythonin asennus</a></li><li><a href="/1.-perusteet/3_komentorivi/">3. Komentorivi</a></li><li><a href="/1.-perusteet/4_kehitysymp%C3%A4rist%C3%B6/">4. Python kehitysympäristö</a></li><li>5. Muuttujat</li><li><a href="/1.-perusteet/6_tyyppimuunnokset/">6. Tyyppimuunnokset</a></li></ul>
+    </li><li>Muut<ul><li><a href="/muut/pathmuuttujanmuokkaus/">Path-muuttujan muokkaus</a></li><li><a href="/muut/termeja/">Termejä</a></li></ul>
+    </li></ul></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Python ohjelmointiopas - 4. Python kehitysympäristö</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+</head><body>
+    <div class="left-window">
+        <div class="content"><h1>4. Python kehitysympäristö</h1><p>Kehitysympäristöllä tarkoitetaan kokonaisuutta joka pitää sisällään kaikki joko kielen, alustan tai ohjelmistokehyksen kannalta oleelliset työkalut. Yksinkertaisimmillaan tähän kokonaisuuteen kuuluu tekstinkäsittelyohjelma jolla koodia kirjoitetaan, tulkki tai kääntäjä jolla ohjelmakoodia muutetaan tietokoneen ymmärtämään muotoon.</p>
+<p>Monimutkaisempi esimerkki voisi olla vaikka mobiilisovellusten-kehitysmypäristö johon kuuluukin läjä työkaluja lisää. Näillä työkaluilla voi mm. testata koodia laitteella/emulaattorilla, pakata sovelluksen laittelle tarkoitetuksi asennustiedostoksi.</p>
+<!-- raw HTML omitted -->
+<h2 id="visual-studio-code">Visual Studio Code</h2>
+<p>Koska koodin kirjoittaminen muistiolla on nykypäivänä tietynlaista masokismia on parempi, että lataamme siihen paremmin soveltuvan työkalun. Pythonille kirjoitushetkellä suositut valinnat ovat <strong>Visual Studio Code</strong> <em>(lyh. VSCode tai Code)</em> ja <strong>PyCharm</strong>. Tässä oppassa tulemme käyttämään Visual Studio Codea sillä editori on melko suosittu myös muita ohjelmointikieliä kirjoittaessa (esim. javascript, typescript, java, rust, go).</p>
+<p>Lataa ja asenna Visual Studio code koneellesi. Asennustiedoston voi käydä latailemassa Visual Studio Coden sivuilta joihin löytyy linkki alta.</p>
+<ul>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code - lataussivusto</a></li>
+</ul>
+<p>Käytän itse versiota oppaassa versiota <strong>1.52.1</strong></p>
+<p>Kun asennus on valmis avaa Visual Studio Code. Avaa laajennusvalikko (engl. Extensions) ja hae Python ja Pylance laajennuksia. Asenna laajennukset visual studio codeen asennuspainikkeella (engl. Install)</p>
+<ul>
+<li>Laajennusvalikon saa auki myös näppäinyhdistelmällä <strong>CTRL+SHIFT+X</strong></li>
+<li>Laajennuksista saa lisätietoja niitä klikkaamalla.</li>
+</ul>
+<p><img src="Kuvat/Python_PyLance_Asennus.png" alt="Python laajennus">
+<em>(Perusasetuksilla valikko on vasemmalla, olen siirtänyt sen omassa asennuksessa oikealle)</em></p>
+<ol>
+<li><strong>Python laajennus</strong>
+<ul>
+<li>Laajennus tuo editoriin toiminnallisuudet mm. ajaa, analysoida, formatoida koodia sekä tuo koodin ulkoasuun vähän väriä, mikä helpottaa koodin lukemista.</li>
+</ul>
+</li>
+<li><strong>Pylance laajennus</strong>
+<ul>
+<li>Parantaa python kielen tekstin automaattista täydennystä joka nopeuttaa koodin kirjoittamista. Automaattisella täydennyksellä editori tarjoaa ehdotuksia koodia kirjoittaessa joista voi halutessaan valita täydennyksen <strong>nuolinäppäimillä + tabilla</strong> haluamansa tai ihan <strong>hiirellä klikkaamalla</strong>.</li>
+</ul>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<h2 id="projektikansion-avaaminen-vscodessa">Projektikansion avaaminen VSCodessa</h2>
+<p>Avaa viime <a href="3_Komentorivi.md">osiossa</a> luotu <strong>PythonOpas</strong> kansio Visual Studio Codessa. Tämä onnistuu valitsemalla ylävalikosta</p>
+<blockquote>
+<p>File &gt; Open Folder</p>
+</blockquote>
+<p>Nyt pitäisi avautua perinteinen kansion valintanäkymä josta voit navigoida PythonOpas kansioon. Mikäli laitoit kansion suosittelemaani paikkaan sen pitäisi löytyä seuraavasta polusta:</p>
+<blockquote>
+<p>C:\Projektit\PythonOpas</p>
+</blockquote>
+<p>PythonOpas kansion pitäisi avautua sisältöineen Visual Studio Codeen.</p>
+<p><!-- raw HTML omitted --></p>
+<h2 id="python-koodin-ajaminen-vscodella">Python koodin ajaminen VSCodella</h2>
+<p>Visual Studio Code sisältää sisäänrakennetun komentorivin jonka saa esiin näppäinyhdistelmällä <strong>Ctrl + ö</strong>. Vaihtoehtoisesti komentorivin saa esiin myös ylävalikosta.</p>
+<blockquote>
+<p>View &gt; Terminal</p>
+</blockquote>
+<p>Komentorivin pitäisi avautua suoraan VSCodessa auki olevaan projektikansioon. Voit suorittaa viime <a href="3_Komentorivi.md">osiossa</a> luodun <strong>TerveMaailma.py</strong> kooditiedoston kirjoittamalla komennon python tiedostonimi eli:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">python TerveMaailma.py
+</code></pre></div><p><img src="Kuvat/VSCode_Komentorivi.png" alt="VSCode komentorivi"></p>
+<p>Toinen vaihtoehto olisi avata tiedosto ja painaa yläkulmasta löytyvää play nappulaa jolloin VSCode ajaa sillä hetkellä auki olevan python kooditiedoston komentorivillä.</p>
+<p><img src="Kuvat/VSCode_PlayNappula.png" alt="VSCode komentorivi"></p>
+
+        </div>
+    </div>
+    <div class="right-window">
+        <div class="navigation">
+            <h1><a href="http://example.org/">Python ohjelmointiopas</a></h1><ul><li>1. Perusteet<ul><li><a href="/1.-perusteet/1_esittely/">1. Esittely</a></li><li><a href="/1.-perusteet/2_pythonasennus/">2. Pythonin asennus</a></li><li><a href="/1.-perusteet/3_komentorivi/">3. Komentorivi</a></li><li>4. Python kehitysympäristö</li><li><a href="/1.-perusteet/5_muuttujat/">5. Muuttujat</a></li><li><a href="/1.-perusteet/6_tyyppimuunnokset/">6. Tyyppimuunnokset</a></li></ul>
+    </li><li>Muut<ul><li><a href="/muut/pathmuuttujanmuokkaus/">Path-muuttujan muokkaus</a></li><li><a href="/muut/termeja/">Termejä</a></li></ul>
+    </li></ul></div>
+    </div>
+</body>
+
+</html>

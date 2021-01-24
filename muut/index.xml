@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Muuts on Python ohjelmointiopas</title>
+    <link>http://example.org/muut/</link>
+    <description>Recent content in Muuts on Python ohjelmointiopas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fi-FI</language><atom:link href="http://example.org/muut/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Path-muuttujan muokkaus</title>
+      <link>http://example.org/muut/pathmuuttujanmuokkaus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/muut/pathmuuttujanmuokkaus/</guid>
+      <description>Path ympäristömuuttuja Kirjoittaessasi komennon komentoriville katsoo Windows löytääkö se vastaavaa komentoa sisäisitä komennoista jonka jälkeen se etsii komentoa vastaavaa suoritettavaa tiedostoa ulkoisista komennoista. Ulkoiset komennot ovat käytännössä suoritettavia tiedostoja joiden kansio-polku on lisätty joko järjestelmän tai käyttäjän Path ympäristömuuttujaan.
+Haluamme lisätä Pythonin Path-muuttujaan koska muuten esimerkiksi Pythonin suorittamisessa komentoriviltä pitäisi aina kertoa koko polku python.exe tiedostoon:
+C:\Users\User\AppData\Local\Programs\Python\Python38\Python --version Mutta mikäli lisäämme polun Python.exe:n kansioon Pythonia voi kutsua komentoriviltä paljon lyhyemmin kuten alla olevassa esimerkissä.</description>
+    </item>
+    
+    <item>
+      <title>Termejä</title>
+      <link>http://example.org/muut/termeja/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/muut/termeja/</guid>
+      <description>Ohjelmistokehityksessä käytetään paljon termejä joiden avulla pyritään yleensä helpottamaan kommunikointia asiantuntijoiden välillä. Näiden termien tunteminen ja ymmärtäminen auttaakin merkittävästi ongelmien ratkonnassa.
+Tulkki (Intrepeter) ja Kääntäjä (Compiler) Ennen kuin ohjelmakoodia voidaan suorittaa se pitää ensiksi kääntää muotoon jota tietokone ymmärtää. Tämä tehdään yleensä joko kerralla tai osissa rivi riviltä. Käyttäessä kääntäjää ohjelmakoodi ajetaan vasta kun koko ohjelmakoodi on käännetty, käyttäessä tulkkia ohjelmaa taas käännetään ja ajetaan rivi kerrallaan joka parhaimmassa tapauksessa mahdollistaa jopa ohjelmakoodin muokkaamisen ohjelman ollessa käynnissä.</description>
+    </item>
+    
+  </channel>
+</rss>

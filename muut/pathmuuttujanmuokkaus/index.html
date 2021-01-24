@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Python ohjelmointiopas - Path-muuttujan muokkaus</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+</head><body>
+    <div class="left-window">
+        <div class="content"><h1>Path-muuttujan muokkaus</h1><h2 id="path-ympäristömuuttuja">Path ympäristömuuttuja</h2>
+<p>Kirjoittaessasi komennon komentoriville katsoo Windows löytääkö se vastaavaa komentoa sisäisitä komennoista jonka jälkeen se etsii komentoa vastaavaa suoritettavaa tiedostoa ulkoisista komennoista. Ulkoiset komennot ovat käytännössä suoritettavia tiedostoja joiden kansio-polku on lisätty joko järjestelmän tai käyttäjän Path ympäristömuuttujaan.</p>
+<p>Haluamme lisätä Pythonin Path-muuttujaan koska muuten esimerkiksi Pythonin suorittamisessa <strong>komentoriviltä</strong> pitäisi aina kertoa koko polku python.exe tiedostoon:</p>
+<pre><code>C:\Users\User\AppData\Local\Programs\Python\Python38\Python --version
+</code></pre><p>Mutta mikäli lisäämme polun Python.exe:n kansioon Pythonia voi kutsua komentoriviltä paljon lyhyemmin kuten alla olevassa esimerkissä.</p>
+<pre><code>Python --version
+</code></pre><h2 id="python-sijainti">Python sijainti</h2>
+<p>Edellä mainittu polku on Python asennuksen sijainti Windows 10 käyttäjärjestelmässä kun Pythonin asentaa oletusasetuksilla. Pythonin sijainnin saa selville vaikka hakemalla Windows kännistävalikosta haulla &ldquo;Python&rdquo; jolloin löytyy &ldquo;<strong>Python.exe</strong>&rdquo; tai versionumeron sekä bittisyyden kanssa esim.  &ldquo;<strong>Python 3.8(32-bit)</strong>&rdquo;.</p>
+<p>Oikealla hiirellä klikkaamalla ja omainsuudet(<strong>Properties</strong>) valitsemalla pitäisi löytyä tiedoston sijainti. Vaihtoehtoisesti voi pitää shift-näppäintä pohjassa klikatessa ja valita &ldquo;Avaa tiedostosijainti&rdquo; (<strong>Open file location</strong>)</p>
+<p><strong>Sijainit Windowsilla oletusasetuksilla (versiolle 3.8)</strong></p>
+<ul>
+<li>64-bit - <em>C:\Users\User\AppData\Local\Programs\Python\Python38</em></li>
+<li>32-bit - <em>C:\Users\User\AppData\Local\Programs\Python\Python38-32</em></li>
+</ul>
+<h2 id="path-ympäristömuuttujan-muokkaus">PATH Ympäristömuuttujan muokkaus</h2>
+<ul>
+<li>Käytä Windowsin käynnistä valikon(<strong>Start menu</strong>) hakua ja etsi &ldquo;Muokkaa järjestelmän ympäristömuuttujia&rdquo; (<strong>&ldquo;Edit the system environment variables&rdquo;</strong>).</li>
+</ul>
+<p><img src="/Kuvat/Muokkaa_ymp%C3%A4rist%C3%B6muuttujia_1.png" alt="Windows Haku"></p>
+<p><!-- raw HTML omitted --></p>
+<ul>
+<li>Paina avautuvasta valikosta Ympäristömuuttujat(<strong>Environment Variables</strong>) nappulaa</li>
+</ul>
+<p><img src="/Kuvat/Muokkaa_ymp%C3%A4rist%C3%B6muuttujia_2.png" alt="Järjestelmän ominaisuudet valikko"></p>
+<p><!-- raw HTML omitted --></p>
+<ul>
+<li>Etsi System variables osiosta Path ja paina muokkaa.</li>
+</ul>
+<blockquote>
+<p><strong>Huom:</strong> Järjestelmämuuttujat(<strong>System variables</strong>) ovat saatavilla kaikille koneen käyttäjille, käyttäjämuuttujat ovat taas saatavilla ainoastaan nykyiselle käyttäjälle. Voit halutessasi tehdä muutoksen myös käyttäjän muuttujiin (<strong>User variables</strong>)</p>
+</blockquote>
+<p><img src="/Kuvat/Muokkaa_ymp%C3%A4rist%C3%B6muuttujia_3.png" alt="Ympäristömuuttujat valikko"></p>
+<p><!-- raw HTML omitted --></p>
+<ul>
+<li>Tämä näkymä on Windows 10:ssä ja Windows 7:ssa hyvin erillainen.
+<ul>
+<li>Windows 10.
+<ol>
+<li>Tarkista, ettei Python polkua ole jo listattu.</li>
+<li>Lisää polku painamalla new ja liittämällä se muokattavaan kenttään kuvan mukaisesti</li>
+<li>Paina OK molempiin ikkunoihin sulkeaksesi ne ja vahvistaaksesi valinnat.</li>
+</ol>
+</li>
+<li>Windows 7
+<ol>
+<li>Kopioi ja liitä muuttujan arvo avautuneesta ikkunasta erilliseen tekstieditoriin kuten muistioon(<strong>Notepad</strong>).</li>
+<li>Polut on eroteltu toisistaan puolipisteellä(<strong>;</strong>)</li>
+<li>Tarkista ettei Python polkua ole jo lisätty muuttujaan.</li>
+<li>Lisää loppuun puolipiste ja polku python.exe kansioon.</li>
+<li>Kopioi koko teksti editorista ja liitä se muuttujan arvoon.</li>
+<li>Paina OK molempiin ikkunoihin sulkeaksesi ne ja vahvistaaksesi valinnat.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/Kuvat/Muokkaa_ymp%C3%A4rist%C3%B6muuttujia_4.png" alt="Ympäristömuuttujan muokkaus valikko"></p>
+
+        </div>
+    </div>
+    <div class="right-window">
+        <div class="navigation">
+            <h1><a href="http://example.org/">Python ohjelmointiopas</a></h1><ul><li>1. Perusteet<ul><li><a href="/1.-perusteet/1_esittely/">1. Esittely</a></li><li><a href="/1.-perusteet/2_pythonasennus/">2. Pythonin asennus</a></li><li><a href="/1.-perusteet/3_komentorivi/">3. Komentorivi</a></li><li><a href="/1.-perusteet/4_kehitysymp%C3%A4rist%C3%B6/">4. Python kehitysympäristö</a></li><li><a href="/1.-perusteet/5_muuttujat/">5. Muuttujat</a></li><li><a href="/1.-perusteet/6_tyyppimuunnokset/">6. Tyyppimuunnokset</a></li></ul>
+    </li><li>Muut<ul><li>Path-muuttujan muokkaus</li><li><a href="/muut/termeja/">Termejä</a></li></ul>
+    </li></ul></div>
+    </div>
+</body>
+
+</html>
