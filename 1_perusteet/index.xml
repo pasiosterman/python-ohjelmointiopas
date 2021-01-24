@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1. Perusteets on Python ohjelmointiopas</title>
-    <link>http://example.org/1.-perusteet/</link>
-    <description>Recent content in 1. Perusteets on Python ohjelmointiopas</description>
+    <title>1_Perusteets on Python ohjelmointiopas</title>
+    <link>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/</link>
+    <description>Recent content in 1_Perusteets on Python ohjelmointiopas</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fi-FI</language><atom:link href="http://example.org/1.-perusteet/index.xml" rel="self" type="application/rss+xml" />
+    <language>fi-FI</language><atom:link href="https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1. Esittely</title>
-      <link>http://example.org/1.-perusteet/1_esittely/</link>
+      <title>1_Esittely</title>
+      <link>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/1_esittely/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/1.-perusteet/1_esittely/</guid>
+      <guid>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/1_esittely/</guid>
       <description>Alkusanat Tämä on kevyt ohjelmointiopas Python ohjelmointikielellä. Päädyin kirjoittamaan oppaan suomenkielellä koska englanninkielisiä oppaita löytyy jo pilmin pimein. Uskon myös, että äidinkielellä asioiden opiskelu on monelle helpompaa. Pyrin kuitenkin tuomaan esille suluissa myös joidenkin asioiden englanninkielisiä termejä, jotta niistä on helpompi hakea lisätietoja.
 Oppaassa pyrin käymään asiat yleisluontoisesti läpi takertumatta liikaa nippelitietoihin tai kielen erityisominaisuuksiin. Nämä ovat mielestäni sellaisia asioita joihin kannattaa perehtyä vasta kun perusteet ovat hallussa tai niitä oikeasti tarvitsee.</description>
     </item>
     
     <item>
-      <title>2. Pythonin asennus</title>
-      <link>http://example.org/1.-perusteet/2_pythonasennus/</link>
+      <title>2_Pythonin_asennus</title>
+      <link>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/2_pythonasennus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/1.-perusteet/2_pythonasennus/</guid>
+      <guid>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/2_pythonasennus/</guid>
       <description>Tietokone ei ymmärrä Python koodia sellaisenaan joten tarvitsemme tulkin (Python interpreter) jonka avulla koodin suorittaminen onnistuu. Tämä kuuluu python asennustiedostoon jonka voi ladata Pythonin sivuilta. Pythonin voi löytää myös Windows kauppapaikalta ja Linuxilla paketinhallintajärjestelmästä.
  Linkki Pythonin sivuille  Asennuksen yhteydessä rastita kohta Add Python *versio* to Path. Mikäli tämä unohtuu voit muokata asennusta ajamalla asennustiedoston uudestaan ja valitsemalla modify. Modify osiossa paina next ja valitse advanced options kohdasta Add Python to environment variables ja install.</description>
     </item>
     
     <item>
-      <title>3. Komentorivi</title>
-      <link>http://example.org/1.-perusteet/3_komentorivi/</link>
+      <title>3_Komentorivi</title>
+      <link>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/3_komentorivi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/1.-perusteet/3_komentorivi/</guid>
+      <guid>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/3_komentorivi/</guid>
       <description>Komentorivin käyttäminen saattaa kuulostaa henkilöille jotka ovat tottuneet graafisiin käyttöliittymiin jopa antiikkiselta. Mutta todellisuudessa komentoriviä käytetään nykypäivänä todennäköisesti enemmän kuin koskaan.
 Syynä tähän on mm. automaatio. Ohjelmoija tekee koodiin muutoksia ja lähettää ne
 Käyttäjä saattaa yhdellä graafisen käyttöliittymän napinpainalluksella aloittaa monimutkaisen tapahtumasarjan, jossa tietokone ajaa komentorivin avulla useita pienohjelmia saavuttaen lopulta käyttäjän haluaman lopputuloksen. Nämä pienohjelmat voivat olla käyttöjärjestelmän tiedostonhallintaan liittyviä toimintoja, internet palveluita ja toteutettu jollain ihan täysin eri ohjelmointikiellellä kun varsinanen käyttöliittymä.</description>
     </item>
     
     <item>
-      <title>4. Python kehitysympäristö</title>
-      <link>http://example.org/1.-perusteet/4_kehitysymp%C3%A4rist%C3%B6/</link>
+      <title>4_Python_kehitysympäristö</title>
+      <link>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/1.-perusteet/4_kehitysymp%C3%A4rist%C3%B6/</guid>
+      <guid>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/</guid>
       <description>Kehitysympäristöllä tarkoitetaan kokonaisuutta joka pitää sisällään kaikki joko kielen, alustan tai ohjelmistokehyksen kannalta oleelliset työkalut. Yksinkertaisimmillaan tähän kokonaisuuteen kuuluu tekstinkäsittelyohjelma jolla koodia kirjoitetaan, tulkki tai kääntäjä jolla ohjelmakoodia muutetaan tietokoneen ymmärtämään muotoon.
 Monimutkaisempi esimerkki voisi olla vaikka mobiilisovellusten-kehitysmypäristö johon kuuluukin läjä työkaluja lisää. Näillä työkaluilla voi mm. testata koodia laitteella/emulaattorilla, pakata sovelluksen laittelle tarkoitetuksi asennustiedostoksi.
 Visual Studio Code Koska koodin kirjoittaminen muistiolla on nykypäivänä tietynlaista masokismia on parempi, että lataamme siihen paremmin soveltuvan työkalun.</description>
     </item>
     
     <item>
-      <title>5. Muuttujat</title>
-      <link>http://example.org/1.-perusteet/5_muuttujat/</link>
+      <title>5_Muuttujat</title>
+      <link>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/5_muuttujat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/1.-perusteet/5_muuttujat/</guid>
+      <guid>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/5_muuttujat/</guid>
       <description>Ohjelmoinnissa muuttujat koostuvat tunnisteesta (engl. identifier) ja muuttujan sisältämästä arvosta (eng. value). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.
 nimi = &amp;#34;Matti Meikäläinen&amp;#34; syntymavuosi = 1994 paino = 80.5 elossa = True Ylläolevassa esimerkissä esitellään 4 muuttujaa joihin sijoitetaan yhtäsuuruusmerkki(=) sijoitusoperaattorilla (engl. Assignment Operator) haluttu arvo. Alla havainnollistava taulukko neljästä esitellystä muuttujasta.
 paino = 80.5 paino = paino + 1.5 Ylläolevassa koodissa viitataan paino-nimisen muuttujan sisältämään arvoon ja lisätään tähän 1.</description>
     </item>
     
     <item>
-      <title>6. Tyyppimuunnokset</title>
-      <link>http://example.org/1.-perusteet/6_tyyppimuunnokset/</link>
+      <title>6_Tyyppimuunnokset</title>
+      <link>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/6_tyyppimuunnokset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/1.-perusteet/6_tyyppimuunnokset/</guid>
+      <guid>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/6_tyyppimuunnokset/</guid>
       <description>merkkijonoVuosi = &amp;#34;2020&amp;#34; kokonaislukuVuosi = 2015 vuosi = merkkijonoVuosi - kokonaislukuVuosi  TypeError: unsupported operand type(s) for -: &amp;lsquo;str&amp;rsquo; and &amp;lsquo;int&amp;rsquo;
  </description>
     </item>

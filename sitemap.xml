@@ -3,56 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/1.-perusteet/1_esittely/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/1_esittely/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/1.-perusteet/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/1.-perusteet/2_pythonasennus/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/2_pythonasennus/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/1.-perusteet/3_komentorivi/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/3_komentorivi/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/1.-perusteet/4_kehitysymp%C3%A4rist%C3%B6/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/1.-perusteet/5_muuttujat/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/5_muuttujat/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/1.-perusteet/6_tyyppimuunnokset/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/1_perusteet/6_tyyppimuunnokset/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/muut/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/muut/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/muut/pathmuuttujanmuokkaus/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/muut/pathmuuttujanmuokkaus/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/tags/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/muut/termeja/</loc>
+    <loc>https://pasiosterman.github.io/python-ohjelmointiopas/muut/termeja/</loc>
   </url>
   
 </urlset>
