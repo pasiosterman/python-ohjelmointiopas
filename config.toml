@@ -1,0 +1,5 @@
+baseURL = "http://example.org/"
+languageCode = "fi-FI"
+title = "Python ohjelmointiopas"
+theme = "code-focus"
+pygmentsUseClasses = true 
