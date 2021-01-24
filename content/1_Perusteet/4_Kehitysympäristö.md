@@ -1,5 +1,5 @@
 ---
-title: "4. Python kehitysympäristö"
+title: "4_Python_kehitysympäristö"
 draft: false
 ---
 

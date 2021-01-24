@@ -1,5 +1,5 @@
 ---
-title: "2. Pythonin asennus"
+title: "2_Pythonin_asennus"
 draft: false
 ---
 

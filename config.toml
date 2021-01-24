@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://pasiosterman.github.io/python-ohjelmointiopas/"
 languageCode = "fi-FI"
 title = "Python ohjelmointiopas"
 theme = "code-focus"
