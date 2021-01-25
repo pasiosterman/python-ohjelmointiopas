@@ -51,6 +51,7 @@ div.left-window div.content
 .content p { margin-left: 2em;}
 .content a { color: #4088f3; text-decoration: none;}
 .content .highlight {margin-left: 2em;}
+.content strong { color: #b2e49b }
 .content table 
 { 
     margin-left: 2em; 
@@ -145,7 +146,9 @@ div.navigation a
     text-decoration: none;
 }
 
-img
+.content img
 {
     max-width: 100%;
+    border-style: solid;
+    border-width: 2px;
 }

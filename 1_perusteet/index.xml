@@ -33,7 +33,7 @@ Mikäli tämä unohtuu voit muokata asennusta ajamalla asennustiedoston uudestaa
       
       <guid>/1_perusteet/3_komentorivi/</guid>
       <description>Graafisiin käyttöliittymiin tottuneille komentorivi saattaa kuulostaa suorastaan antiikkiselta, mutta todellisuudessa komentoriviä käytetään enemmän kuin koskaan. Suurin syy tähän on kasvanut tarve automatisoida asioita erilaisten komentosarjojen avulla. Toisena syynä on halu jakaa sovellukset pienempiin helpommin hallittaviin osiin jolloin graafinen käyttöliittymä voi toimia erillisenä kokonaisuutena jonka voi tarvittaessa vaihtaa toiseen.
-Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toiminnallisuuksiin jotä ei perus käyttöliittymästä syystä tai toisesta löydy.</description>
+Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toimintoihin jotä ei perus käyttöliittymästä välttämättä löydy.</description>
     </item>
     
     <item>
@@ -43,8 +43,7 @@ Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet
       
       <guid>/1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/</guid>
       <description>Kehitysympäristöllä tarkoitetaan kokonaisuutta joka pitää sisällään kaikki joko kielen, alustan tai ohjelmistokehyksen kannalta oleelliset työkalut. Yksinkertaisimmillaan tähän kokonaisuuteen kuuluu tekstinkäsittelyohjelma jolla koodia kirjoitetaan, tulkki tai kääntäjä jolla ohjelmakoodia muutetaan tietokoneen ymmärtämään muotoon.
-Monimutkaisempi esimerkki voisi olla vaikka mobiilisovellusten-kehitysmypäristö johon kuuluukin läjä työkaluja lisää. Näillä työkaluilla voi mm. testata koodia laitteella/emulaattorilla, pakata sovelluksen laittelle tarkoitetuksi asennustiedostoksi.
-Visual Studio Code Koska koodin kirjoittaminen muistiolla on nykypäivänä tietynlaista masokismia on parempi, että lataamme siihen paremmin soveltuvan työkalun.</description>
+Visual Studio Code Koska koodin kirjoittaminen muistiolla on nykypäivänä tietynlaista masokismia on parempi, että lataamme siihen paremmin soveltuvan työkalun. Pythonille kirjoitushetkellä suositut valinnat ovat Visual Studio Code (lyh. VSCode tai Code) ja PyCharm. Tässä oppassa tulemme käyttämään VSCodea sillä editori on melko suosittu myös muita ohjelmointikieliä kirjoittaessa (esim.</description>
     </item>
     
     <item>
@@ -55,7 +54,7 @@ Visual Studio Code Koska koodin kirjoittaminen muistiolla on nykypäivänä tiet
       <guid>/1_perusteet/5_muuttujat/</guid>
       <description>Ohjelmoinnissa muuttujat koostuvat tunnisteesta (engl. identifier) ja muuttujan sisältämästä arvosta (eng. value). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.
 nimi = &amp;#34;Matti Meikäläinen&amp;#34; syntymavuosi = 1994 paino = 80.5 elossa = True Ylläolevassa esimerkissä esitellään 4 muuttujaa joihin sijoitetaan yhtäsuuruusmerkki(=) sijoitusoperaattorilla (engl. Assignment Operator) haluttu arvo. Alla havainnollistava taulukko neljästä esitellystä muuttujasta.
-paino = 80.5 paino = paino + 1.5 Ylläolevassa koodissa viitataan paino-nimisen muuttujan sisältämään arvoon ja lisätään tähän 1.</description>
+   Tunniste Arvo Tyyppi     nimi Matti Meikäläinen Merkkijono   syntymavuosi 1994 Kokonaisluku   paino 80.</description>
     </item>
     
     <item>

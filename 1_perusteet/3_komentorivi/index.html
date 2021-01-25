@@ -6,49 +6,76 @@
 </head><body>
     <div class="left-window">
         <div class="content"><h1>3_Komentorivi</h1><p>Graafisiin käyttöliittymiin tottuneille komentorivi saattaa kuulostaa suorastaan antiikkiselta, mutta todellisuudessa komentoriviä käytetään enemmän kuin koskaan. Suurin syy tähän on <strong>kasvanut tarve automatisoida asioita</strong> erilaisten komentosarjojen avulla. Toisena syynä on <strong>halu jakaa sovellukset pienempiin helpommin hallittaviin osiin</strong> jolloin graafinen käyttöliittymä voi toimia erillisenä kokonaisuutena jonka voi tarvittaessa vaihtaa toiseen.</p>
-<p>Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toiminnallisuuksiin jotä ei perus käyttöliittymästä syystä tai toisesta löydy.
-Esimerkkejä: Blender3D, Photoshop, Pelit ja niiden modaustyökalut,</p>
-<h2 id="komentorivillä-navigointi">Komentorivillä navigointi</h2>
-<p>Hae ja avaa käynnästä valikosta joko cmd, Powershell tai cmder. Nämä toimivat melko samalla tavalla joten valinnalla ei ole sikäli hirveästi väliä.</p>
-<p>Komentorivillä navigointi tapahtuu <strong>cd</strong> komennolla (<strong>Change directory</strong>). Kirjoittamalla komentorivillä <strong>cd c:/</strong> komentorivi siirtyy tietokoneen <strong>c:/</strong> juureen. Kirjoittamalla tämän jälkeen <strong>cd Windows</strong> siirtyy komentorivi <strong>c:/</strong> asemalta löytyvään Windows kansioon. Takaisinpäin pääsee kirjoittamalla <strong>cd ..</strong> jolloin komentorivi siirtyy takaisin Windows kansiosta <strong>c:/</strong> aseman juureen.</p>
-<p>Jokaisella asemalla on oma erillinen &ldquo;nykyinen asema&rdquo;(<strong><em>Current directory</em></strong>) johon voi navigoida kirjoittamalla aseman nimen ja kaksoispisteen esim. <strong>g:</strong></p>
-<!-- raw HTML omitted -->
-<p><!-- raw HTML omitted --></p>
-<p><img src="../../kuvat/perusteet/komentorivi-powershell.png" alt="Komentorivi Powershell"></p>
-<p>Nykyisen kansion sisällön saa selville kirjoittamalla <strong>Dir</strong> jolloin komentoriville tulostuu kaikki kansion sisällä olevat alikansiot ja tiedostot.</p>
-<p><!-- raw HTML omitted --></p>
-<p><img src="../../kuvat/perusteet/komentorivi-cmd.png" alt="Komentorivi cmd"></p>
-<p><!-- raw HTML omitted --></p>
-<h3 id="komentorivi-vinkkejä">Komentorivi Vinkkejä</h3>
-<!-- raw HTML omitted -->
-<p><!-- raw HTML omitted --></p>
-<h2 id="python-kooditiedoston-ajaminen-komentoriviltä">Python kooditiedoston ajaminen komentoriviltä</h2>
-<ol>
-<li>Luo kansio Python opas jonnekin helposti löydettävään paikkaan.
+<p>Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toimintoihin jotä ei perus käyttöliittymästä välttämättä löydy.</p>
+<p><strong>Esimerkkejä:</strong> Blender3D, Photoshop, Pelit ja niiden modaustyökalut,</p>
+<h2 id="peruskomentoja">Peruskomentoja</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># siirtyy aseman juureen esim. c:/</span>
+<span class="nb">cd</span> /
+
+<span class="c1"># siirtyy c-asemalle.</span>
+<span class="nb">cd</span> c:/
+
+<span class="c1"># listaa nykyisen kansion tai aseman sisältämät tiedostot ja kansiot.</span>
+dir
+
+<span class="c1"># luo kansion nimeltä testikansio</span>
+mkdir testikansio
+
+<span class="c1"># siirtyy kansioon testikansio</span>
+<span class="nb">cd</span> testikansio
+
+<span class="c1"># siirtyy takaisinpäin kansiohierarkiassa</span>
+<span class="nb">cd</span> ..
+
+<span class="c1"># poistaa kansion nimeltä testikansio</span>
+rmdir testikansio
+
+<span class="c1"># tyhjentää komentorivi syötteet</span>
+cls
+</code></pre></div><h2 id="komentorivi-vinkkejä">komentorivi vinkkejä</h2>
 <ul>
-<li>Suosittelen sijaintia C:/Projektit/PythonKansio</li>
+<li><strong>Automaattinen täyttö (TAB / ↹)</strong>
+<ul>
+<li>Kirjoittaessasi kansiopolkua voit painaa <strong>tabia</strong> ja komentorivi yrittää päätellä ja täyttää loppuosan tiedoston tai kansion nimestä.</li>
 </ul>
 </li>
-<li>Kopio ja liitä muistoon(<strong>Notepad</strong>) alla oleva koodinpätkä.</li>
+<li><strong>Komentohistoria (Nuolet: ↑ ja ↓)</strong>
+<ul>
+<li>Nuolinäppäimillä ylös ja alas voi selata komento-historiaa(<strong>Command history</strong>). Tämä helpottaa esimerkiksi python koodin ajamista sillä halutessa ajaa koodia uusiksi ei tarvitse joka kerta kirjoittaa komentosarjaa uusiksi.</li>
+<li>Cmd komentorivin historia säilyy yleensä siihen asti kunnes cmd-ikkunan sulkee. Muut komentorivi ohjelmat saattavat säilyttää komentohistoriaa huomattavasti pidempään.</li>
+</ul>
+</li>
+<li><strong>Välilyönnit tiedostojen ja kansioiden nimissä.</strong>
+<ul>
+<li>Mikäli kansion nimessä on väli kuten <strong>Program Files</strong> voit kirjoittaa kansion nimen lainausmerkkeihin <strong>cd &ldquo;Program Files&rdquo;</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="python-kooditiedoston-ajaminen-komentoriviltä">Python kooditiedoston ajaminen komentoriviltä</h2>
+<ol>
+<li>Luo kansio nimeltä <strong>python_opas</strong> jonnekin helposti löydettävään paikkaan.
+<ul>
+<li>Suosittelen sijaintia <strong>c:/projektit/python_opas</strong></li>
+</ul>
+</li>
+<li>Kopio ja liitä muistoon(<strong>engl. Notepad</strong>) alla oleva koodinpätkä.</li>
 </ol>
-<p>Python 3</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;Terve maailma!&#34;</span><span class="p">)</span>
 </code></pre></div><ol start="3">
-<li>Tallenna tiedosto Projektit/PythonOpas kansioon nimellä TerveMaailma.py</li>
-<li>Avaa komentorivi cmd tai Powershell Windows käynnistä valikosta.</li>
-<li>Navigoi komentorivillä kansioon PythonOpas</li>
+<li>Anna tiedostolle nimi <strong>terve_maailma.py</strong> ja tallenna se <strong>python_opas</strong> kansioon.</li>
+<li>Avaa komentorivi <strong>cmd</strong> tai <strong>Powershell</strong> käynnistä-valikosta.</li>
+<li>Navigoi komentorivillä kansioon <strong>python_opas</strong></li>
 <li>Suorita komentorivillä seuraava komento</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">python TerveMaailma.py
-</code></pre></div><p><img src="../../kuvat/perusteet/terve-maailma.png" alt="Terve Maailma"></p>
-<p>Komentoriville pitäisi tulostua perinteinen <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">&ldquo;Hello World&rdquo;</a> suomeksi. HelloWorld esimerkki on yleensä ensiaskel uuden ohjelmointikielen opiskelussa. HelloWorld esimerkit voivat kertoa yllättävän paljon ohjelmointikielestä ja esimerkin suorittaminen on yleensä hyvä testi jonka perusteella voi päätellä, että kaikki on ainakin tähän mennessä kunnossa.</p>
-<p>Periaattessa tämä on kaikki mitä tarvitaan python koodin kirjoittamiseen ja ajamiseen, mutta seuraavassa osiossa</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">python terve_maailma.py
+</code></pre></div><p><img src="../../kuvat/perusteet/terve-maailma-komentorivi.png" alt="Terve Maailma"></p>
+<p>Komentoriville pitäisi tulostua perinteinen <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">&ldquo;Hello World&rdquo;</a> suomeksi. <strong>Hello World</strong> esimerkki on yleensä ensiaskel uuden ohjelmointikielen opiskelussa. Hello World esimerkit voivat kertoa yllättävän paljon ohjelmointikielestä ja esimerkin suorittaminen on yleensä hyvä testi jonka perusteella voi päätellä, että kaikki on ainakin tähän mennessä kunnossa.</p>
 
         </div>
     </div>
     <div class="right-window">
         <div class="navigation">
-            <h1><a href="">Python ohjelmointiopas</a></h1><ul><li>1_Perusteet<ul><li><a href="../../1_perusteet/1_esittely/">1_Esittely</a></li><li><a href="../../1_perusteet/2_pythonasennus/">2_Pythonin_asennus</a></li><li>3_Komentorivi</li><li><a href="../../1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/">4_Python_kehitysympäristö</a></li><li><a href="../../1_perusteet/5_muuttujat/">5_Muuttujat</a></li><li><a href="../../1_perusteet/6_tyyppimuunnokset/">6_Tyyppimuunnokset</a></li></ul>
+            <h1><a href="../../">Python ohjelmointiopas</a></h1><ul><li>1_Perusteet<ul><li><a href="../../1_perusteet/1_esittely/">1_Esittely</a></li><li><a href="../../1_perusteet/2_pythonasennus/">2_Pythonin_asennus</a></li><li>3_Komentorivi</li><li><a href="../../1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/">4_Python_kehitysympäristö</a></li><li><a href="../../1_perusteet/5_muuttujat/">5_Muuttujat</a></li><li><a href="../../1_perusteet/6_tyyppimuunnokset/">6_Tyyppimuunnokset</a></li></ul>
     </li><li>Muut<ul><li><a href="../../muut/pathmuuttujanmuokkaus/">Path-muuttujan muokkaus</a></li><li><a href="../../muut/termeja/">Termejä</a></li></ul>
     </li></ul></div>
     </div>

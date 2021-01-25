@@ -6,22 +6,21 @@
 </head><body>
     <div class="left-window">
         <div class="content"><h1>4_Python_kehitysympäristö</h1><p>Kehitysympäristöllä tarkoitetaan kokonaisuutta joka pitää sisällään kaikki joko kielen, alustan tai ohjelmistokehyksen kannalta oleelliset työkalut. Yksinkertaisimmillaan tähän kokonaisuuteen kuuluu tekstinkäsittelyohjelma jolla koodia kirjoitetaan, tulkki tai kääntäjä jolla ohjelmakoodia muutetaan tietokoneen ymmärtämään muotoon.</p>
-<p>Monimutkaisempi esimerkki voisi olla vaikka mobiilisovellusten-kehitysmypäristö johon kuuluukin läjä työkaluja lisää. Näillä työkaluilla voi mm. testata koodia laitteella/emulaattorilla, pakata sovelluksen laittelle tarkoitetuksi asennustiedostoksi.</p>
-<!-- raw HTML omitted -->
 <h2 id="visual-studio-code">Visual Studio Code</h2>
-<p>Koska koodin kirjoittaminen muistiolla on nykypäivänä tietynlaista masokismia on parempi, että lataamme siihen paremmin soveltuvan työkalun. Pythonille kirjoitushetkellä suositut valinnat ovat <strong>Visual Studio Code</strong> <em>(lyh. VSCode tai Code)</em> ja <strong>PyCharm</strong>. Tässä oppassa tulemme käyttämään Visual Studio Codea sillä editori on melko suosittu myös muita ohjelmointikieliä kirjoittaessa (esim. javascript, typescript, java, rust, go).</p>
-<p>Lataa ja asenna Visual Studio code koneellesi. Asennustiedoston voi käydä latailemassa Visual Studio Coden sivuilta joihin löytyy linkki alta.</p>
+<p>Koska koodin kirjoittaminen muistiolla on nykypäivänä tietynlaista masokismia on parempi, että lataamme siihen paremmin soveltuvan työkalun. Pythonille kirjoitushetkellä suositut valinnat ovat <strong>Visual Studio Code (lyh. VSCode tai Code)</strong> ja <strong>PyCharm</strong>. Tässä oppassa tulemme käyttämään <strong>VSCodea</strong> sillä editori on melko suosittu myös muita ohjelmointikieliä kirjoittaessa (esim. javascript, typescript, java, rust, go).</p>
+<p>Lataa ja asenna <strong>VSCode</strong> koneellesi. Asennustiedoston voi käydä latailemassa Visual Studio Coden sivuilta joihin löytyy linkki alta.</p>
 <ul>
 <li><a href="https://code.visualstudio.com/">Visual Studio Code - lataussivusto</a></li>
 </ul>
-<p>Käytän itse versiota oppaassa versiota <strong>1.52.1</strong></p>
-<p>Kun asennus on valmis avaa Visual Studio Code. Avaa laajennusvalikko (engl. Extensions) ja hae Python ja Pylance laajennuksia. Asenna laajennukset visual studio codeen asennuspainikkeella (engl. Install)</p>
-<ul>
-<li>Laajennusvalikon saa auki myös näppäinyhdistelmällä <strong>CTRL+SHIFT+X</strong></li>
-<li>Laajennuksista saa lisätietoja niitä klikkaamalla.</li>
-</ul>
-<p><img src="../../kuvat/pylance-asennus.png" alt="Python laajennus">
-<em>(Perusasetuksilla valikko on vasemmalla, olen siirtänyt sen omassa asennuksessa oikealle)</em></p>
+<p>Kun asennus on valmis avaa Visual Studio Code. Avaa laajennusvalikko (<strong>engl. Extensions</strong>) ja hae <strong>Python</strong> ja <strong>Pylance</strong> laajennuksia. Asenna laajennukset Visual studio codeen asennuspainikkeella (<strong>engl. Install</strong>)</p>
+<blockquote>
+<p>Laajennusvalikon saa auki myös näppäinyhdistelmällä <strong>CTRL+SHIFT+X</strong></p>
+</blockquote>
+<blockquote>
+<p>Laajennuksista saa lisätietoja niitä klikkaamalla.</p>
+</blockquote>
+<p><img src="../../kuvat/perusteet/pylance-asennus.png" alt="Python laajennus"></p>
+<p><em>(Perusasetuksilla valikko on vasemmalla, olen siirtänyt sen omassa asennuksessa oikealle)</em></p>
 <ol>
 <li><strong>Python laajennus</strong>
 <ul>
@@ -31,23 +30,23 @@
 <li><strong>Pylance laajennus</strong>
 <ul>
 <li>Parantaa python kielen tekstin automaattista täydennystä joka nopeuttaa koodin kirjoittamista. Automaattisella täydennyksellä editori tarjoaa ehdotuksia koodia kirjoittaessa joista voi halutessaan valita täydennyksen <strong>nuolinäppäimillä + tabilla</strong> haluamansa tai ihan <strong>hiirellä klikkaamalla</strong>.</li>
+<li>Automaattisen täydennyksen ehdotukset saa esille myös näppäinyhdistelmällä <strong>ctrl + space</strong></li>
 </ul>
 </li>
 </ol>
-<!-- raw HTML omitted -->
 <h2 id="projektikansion-avaaminen-vscodessa">Projektikansion avaaminen VSCodessa</h2>
-<p>Avaa viime <a href="../3_komentorivi/">osiossa</a> luotu <strong>PythonOpas</strong> kansio Visual Studio Codessa. Tämä onnistuu valitsemalla ylävalikosta</p>
+<p>Avaa viime <a href="../../1_perusteet/3_komentorivi/">osiossa</a> luotu <strong>python_opas</strong> kansio VSCodessa. Tämä onnistuu valitsemalla ylävalikosta</p>
 <blockquote>
 <p>File &gt; Open Folder</p>
 </blockquote>
 <p>Nyt pitäisi avautua perinteinen kansion valintanäkymä josta voit navigoida PythonOpas kansioon. Mikäli laitoit kansion suosittelemaani paikkaan sen pitäisi löytyä seuraavasta polusta:</p>
 <blockquote>
-<p>C:\Projektit\PythonOpas</p>
+<p>C:\projektit\python-opas</p>
 </blockquote>
 <p>PythonOpas kansion pitäisi avautua sisältöineen Visual Studio Codeen.</p>
 <p><!-- raw HTML omitted --></p>
 <h2 id="python-koodin-ajaminen-vscodella">Python koodin ajaminen VSCodella</h2>
-<p>Visual Studio Code sisältää sisäänrakennetun komentorivin jonka saa esiin näppäinyhdistelmällä <strong>Ctrl + ö</strong>. Vaihtoehtoisesti komentorivin saa esiin myös ylävalikosta.</p>
+<p><strong>VSCode</strong> sisältää sisäänrakennetun komentorivin jonka saa esiin näppäinyhdistelmällä <strong>Ctrl + ö</strong>. Vaihtoehtoisesti komentorivin saa esiin myös ylävalikosta.</p>
 <blockquote>
 <p>View &gt; Terminal</p>
 </blockquote>
@@ -61,7 +60,7 @@
     </div>
     <div class="right-window">
         <div class="navigation">
-            <h1><a href="">Python ohjelmointiopas</a></h1><ul><li>1_Perusteet<ul><li><a href="../../1_perusteet/1_esittely/">1_Esittely</a></li><li><a href="../../1_perusteet/2_pythonasennus/">2_Pythonin_asennus</a></li><li><a href="../../1_perusteet/3_komentorivi/">3_Komentorivi</a></li><li>4_Python_kehitysympäristö</li><li><a href="../../1_perusteet/5_muuttujat/">5_Muuttujat</a></li><li><a href="../../1_perusteet/6_tyyppimuunnokset/">6_Tyyppimuunnokset</a></li></ul>
+            <h1><a href="../../">Python ohjelmointiopas</a></h1><ul><li>1_Perusteet<ul><li><a href="../../1_perusteet/1_esittely/">1_Esittely</a></li><li><a href="../../1_perusteet/2_pythonasennus/">2_Pythonin_asennus</a></li><li><a href="../../1_perusteet/3_komentorivi/">3_Komentorivi</a></li><li>4_Python_kehitysympäristö</li><li><a href="../../1_perusteet/5_muuttujat/">5_Muuttujat</a></li><li><a href="../../1_perusteet/6_tyyppimuunnokset/">6_Tyyppimuunnokset</a></li></ul>
     </li><li>Muut<ul><li><a href="../../muut/pathmuuttujanmuokkaus/">Path-muuttujan muokkaus</a></li><li><a href="../../muut/termeja/">Termejä</a></li></ul>
     </li></ul></div>
     </div>
