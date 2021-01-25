@@ -9,13 +9,13 @@ Kirjoittaessasi komennon komentoriville katsoo Windows löytääkö se vastaavaa
 
 Haluamme lisätä Pythonin Path-muuttujaan koska muuten esimerkiksi Pythonin suorittamisessa __komentoriviltä__ pitäisi aina kertoa koko polku python.exe tiedostoon:
 
-```
+```bash
 C:\Users\User\AppData\Local\Programs\Python\Python38\Python --version
 ```
 
 Mutta mikäli lisäämme polun Python.exe:n kansioon Pythonia voi kutsua komentoriviltä paljon lyhyemmin kuten alla olevassa esimerkissä. 
 
-```
+```bash
 Python --version
 ```
 
@@ -26,31 +26,27 @@ Edellä mainittu polku on Python asennuksen sijainti Windows 10 käyttäjärjest
 Oikealla hiirellä klikkaamalla ja omainsuudet(__Properties__) valitsemalla pitäisi löytyä tiedoston sijainti. Vaihtoehtoisesti voi pitää shift-näppäintä pohjassa klikatessa ja valita "Avaa tiedostosijainti" (__Open file location__)
 
 __Sijainit Windowsilla oletusasetuksilla (versiolle 3.8)__
-* 64-bit - *C:\Users\User\AppData\Local\Programs\Python\Python38*
-* 32-bit - *C:\Users\User\AppData\Local\Programs\Python\Python38-32*
+
+> 64-bit - *C:\Users\User\AppData\Local\Programs\Python\Python38*
+
+> 32-bit - *C:\Users\User\AppData\Local\Programs\Python\Python38-32*
 
 ## PATH Ympäristömuuttujan muokkaus
 
 * Käytä Windowsin käynnistä valikon(__Start menu__) hakua ja etsi "Muokkaa järjestelmän ympäristömuuttujia" (__"Edit the system environment variables"__). 
 
-![Windows Haku](/kuvat/Muokkaa_ympäristömuuttujia_1.png)
-
-<br />
+![Windows Haku](/kuvat/muut/path-muuttuja-1.png)
 
 * Paina avautuvasta valikosta Ympäristömuuttujat(__Environment Variables__) nappulaa
 
-![Järjestelmän ominaisuudet valikko](/kuvat/Muokkaa_ympäristömuuttujia_2.png)
-
-<br />
+![Järjestelmän ominaisuudet valikko](/kuvat/muut/path-muuttuja-2.png)
 
 * Etsi System variables osiosta Path ja paina muokkaa. 
 
 >__Huom:__ Järjestelmämuuttujat(__System variables__) ovat saatavilla kaikille koneen käyttäjille, käyttäjämuuttujat ovat taas saatavilla ainoastaan nykyiselle käyttäjälle. Voit halutessasi tehdä muutoksen myös käyttäjän muuttujiin (__User variables__)
 
 
-![Ympäristömuuttujat valikko](/kuvat/Muokkaa_ympäristömuuttujia_3.png)
-
-<br />
+![Ympäristömuuttujat valikko](/kuvat/muut/path-muuttuja-3.png)
 
 * Tämä näkymä on Windows 10:ssä ja Windows 7:ssa hyvin erillainen. 
     * Windows 10. 
@@ -66,4 +62,4 @@ __Sijainit Windowsilla oletusasetuksilla (versiolle 3.8)__
         6. Paina OK molempiin ikkunoihin sulkeaksesi ne ja vahvistaaksesi valinnat.
     
 
-![Ympäristömuuttujan muokkaus valikko](/kuvat/Muokkaa_ympäristömuuttujia_4.png)
+![Ympäristömuuttujan muokkaus valikko](/kuvat/muut/path-muuttuja-4.png)

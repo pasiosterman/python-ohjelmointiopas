@@ -5,144 +5,68 @@ draft: false
 
 Graafisiin käyttöliittymiin tottuneille komentorivi saattaa kuulostaa suorastaan antiikkiselta, mutta todellisuudessa komentoriviä käytetään enemmän kuin koskaan. Suurin syy tähän on **kasvanut tarve automatisoida asioita** erilaisten komentosarjojen avulla. Toisena syynä on **halu jakaa sovellukset pienempiin helpommin hallittaviin osiin** jolloin graafinen käyttöliittymä voi toimia erillisenä kokonaisuutena jonka voi tarvittaessa vaihtaa toiseen. 
 
-Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toiminnallisuuksiin jotä ei perus käyttöliittymästä syystä tai toisesta löydy. 
-Esimerkkejä: Blender3D, Photoshop, Pelit ja niiden modaustyökalut, 
+Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toimintoihin jotä ei perus käyttöliittymästä välttämättä löydy.
 
-## Komentorivillä navigointi
+**Esimerkkejä:** Blender3D, Photoshop, Pelit ja niiden modaustyökalut, 
 
-Hae ja avaa käynnästä valikosta joko cmd, Powershell tai cmder. Nämä toimivat melko samalla tavalla joten valinnalla ei ole sikäli hirveästi väliä. 
+## Peruskomentoja
 
-Komentorivillä navigointi tapahtuu __cd__ komennolla (__Change directory__). Kirjoittamalla komentorivillä __cd c:/__ komentorivi siirtyy tietokoneen __c:/__ juureen. Kirjoittamalla tämän jälkeen __cd Windows__ siirtyy komentorivi __c:/__ asemalta löytyvään Windows kansioon. Takaisinpäin pääsee kirjoittamalla __cd ..__ jolloin komentorivi siirtyy takaisin Windows kansiosta __c:/__ aseman juureen. 
+```bash
+# siirtyy aseman juureen esim. c:/
+cd /
 
-Jokaisella asemalla on oma erillinen "nykyinen asema"(__*Current directory*__) johon voi navigoida kirjoittamalla aseman nimen ja kaksoispisteen esim. __g:__
+# siirtyy c-asemalle.
+cd c:/
 
-<table border=2>
-    <tr>
-        <td>
-            <b>Komento</b>
-        </td>
-        <td>
-            <b>Kuvaus</b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            cd asema-kirjain:/
-        </td>
-        <td>
-            <b>esimerkki: cd c:/ </b><br />
-            Siirtyy tietokoneen c-asemalle.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            cd kansion nimi
-        </td>
-        <td>
-            <b>esimerkki: cd Windows </b><br />
-            siirty nykyisessä kansiossa (C:/) olevaan Windows kansioon.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            cd ..
-        </td>
-        <td>
-            Siirtyy kansio-hierarkiassa taakseppäin. Esimerkiksi Windows kansiosta takaisin C-aseman juureen. 
-        </td>
-    </tr>
-    <tr>
-        <td>
-            dir
-        </td>
-        <td>
-            Listaa nykyisen kansion tiedostot ja ali-kansiot. 
-        </td>
-    </tr>
-</table>
+# listaa nykyisen kansion tai aseman sisältämät tiedostot ja kansiot.
+dir
 
-<br />
+# luo kansion nimeltä testikansio
+mkdir testikansio
 
-![Komentorivi Powershell](/kuvat/perusteet/komentorivi-powershell.png)
+# siirtyy kansioon testikansio
+cd testikansio
 
-Nykyisen kansion sisällön saa selville kirjoittamalla __Dir__ jolloin komentoriville tulostuu kaikki kansion sisällä olevat alikansiot ja tiedostot. 
+# siirtyy takaisinpäin kansiohierarkiassa
+cd ..
 
-<br />
+# poistaa kansion nimeltä testikansio
+rmdir testikansio
 
-![Komentorivi cmd](/kuvat/perusteet/komentorivi-cmd.png)
+# tyhjentää komentorivi syötteet
+cls
+```
 
-<br />
+## komentorivi vinkkejä
 
-### Komentorivi Vinkkejä
-
-<table border=2>
-<tr>
-    <td>
-        Automaattinen täyttö (TAB / &#8633;)
-    </td>
-    <td>
-        <ul>
-            <li>
-                Kirjoittaessasi kansiopolkua voit painaa __tabia__ ja komentorivi yrittää arvata ja täyttää loppuosan tiedoston tai kansion nimestä. Tämä nopeuttaa navigointia sillä käyttäjän tarvitsee kirjoittaa tiedoston tai kansion nimen alusta vain osa ja komentorivi arvaa loput. 
-            </li>
-            <li>
-                Powershell lisää tiedostojen eteen __./__ joka tarkoittaa lähinnä nykyistä kansiota joten siitä ei tarvitse liiemmin välittää.
-            </li>
-        </ul>
-    </td>
-<tr>
-    <td>
-        Komentohistoria (Nuolet: &#8593; ja &#8595;)
-    </td>
-    <td>
-        <ul>
-            <li>
-                Nuolinäppäimillä ylös ja alas voi selata komento-historiaa(__Command history__). Tämä helpottaa esimerkiksi python koodin ajamista sillä halutessa ajaa koodia uusiksi ei tarvitse joka kerta kirjoittaa komentosarjaa uusiksi.
-            </li>
-            <li>
-                Cmd komentorivin historia säilyy yleensä siihen asti kunnes cmd-ikkunan sulkee. Muut komentorivi ohjelmat saattavat säilyttää komentohistoriaa huomattavasti pidempään.
-            </li>
-        </ul>
-    </td>
-</tr>
-<tr>
-    <td>
-        Välilyönnit tiedostojen ja kansioiden nimissä.
-    </td>
-    <td>
-        <ul>
-            <li>
-                Mikäli kansion nimessä on väli kuten <i><b>__Program Files__</i></b> voit kirjoittaa kansion nimen lainausmerkkeihin <i><b>cd "Program Files"</i></b>   
-            </li>
-        </ul>
-    </td>
-</tr>
-</table>
-
-<br />
+- **Automaattinen täyttö (TAB / &#8633;)**
+  - Kirjoittaessasi kansiopolkua voit painaa **tabia** ja komentorivi yrittää päätellä ja täyttää loppuosan tiedoston tai kansion nimestä.
+- **Komentohistoria (Nuolet: &#8593; ja &#8595;)**
+  - Nuolinäppäimillä ylös ja alas voi selata komento-historiaa(__Command history__). Tämä helpottaa esimerkiksi python koodin ajamista sillä halutessa ajaa koodia uusiksi ei tarvitse joka kerta kirjoittaa komentosarjaa uusiksi.
+  - Cmd komentorivin historia säilyy yleensä siihen asti kunnes cmd-ikkunan sulkee. Muut komentorivi ohjelmat saattavat säilyttää komentohistoriaa huomattavasti pidempään.
+- **Välilyönnit tiedostojen ja kansioiden nimissä.**
+  -  Mikäli kansion nimessä on väli kuten **Program Files** voit kirjoittaa kansion nimen lainausmerkkeihin **cd "Program Files"**
 
 ## Python kooditiedoston ajaminen komentoriviltä
 
-1. Luo kansio Python opas jonnekin helposti löydettävään paikkaan.
-    * Suosittelen sijaintia C:/Projektit/PythonKansio 
-2. Kopio ja liitä muistoon(__Notepad__) alla oleva koodinpätkä.
+1. Luo kansio nimeltä **python_opas** jonnekin helposti löydettävään paikkaan.
+    * Suosittelen sijaintia **c:/projektit/python_opas** 
+2. Kopio ja liitä muistoon(**engl. Notepad**) alla oleva koodinpätkä.
 
-Python 3
 ```python
 print("Terve maailma!")
 ```
 
-3. Tallenna tiedosto Projektit/PythonOpas kansioon nimellä TerveMaailma.py
-4. Avaa komentorivi cmd tai Powershell Windows käynnistä valikosta.
-5. Navigoi komentorivillä kansioon PythonOpas
+3. Anna tiedostolle nimi **terve_maailma.py** ja tallenna se **python_opas** kansioon.
+4. Avaa komentorivi **cmd** tai **Powershell** käynnistä-valikosta.
+5. Navigoi komentorivillä kansioon **python_opas**
 6. Suorita komentorivillä seuraava komento
 
 ```bash
-python TerveMaailma.py
+python terve_maailma.py
 ```
 
-![Terve Maailma](/kuvat/perusteet/terve-maailma.png)
+![Terve Maailma](/kuvat/perusteet/terve-maailma-komentorivi.png)
 
-Komentoriville pitäisi tulostua perinteinen ["Hello World"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) suomeksi. HelloWorld esimerkki on yleensä ensiaskel uuden ohjelmointikielen opiskelussa. HelloWorld esimerkit voivat kertoa yllättävän paljon ohjelmointikielestä ja esimerkin suorittaminen on yleensä hyvä testi jonka perusteella voi päätellä, että kaikki on ainakin tähän mennessä kunnossa.
+Komentoriville pitäisi tulostua perinteinen ["Hello World"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) suomeksi. **Hello World** esimerkki on yleensä ensiaskel uuden ohjelmointikielen opiskelussa. Hello World esimerkit voivat kertoa yllättävän paljon ohjelmointikielestä ja esimerkin suorittaminen on yleensä hyvä testi jonka perusteella voi päätellä, että kaikki on ainakin tähän mennessä kunnossa.
 
-Periaattessa tämä on kaikki mitä tarvitaan python koodin kirjoittamiseen ja ajamiseen, mutta seuraavassa osiossa

@@ -14,97 +14,97 @@ elossa = True
 
 Ylläolevassa esimerkissä esitellään __4 muuttujaa__ joihin sijoitetaan yhtäsuuruusmerkki(=) sijoitusoperaattorilla (__engl. Assignment Operator__) haluttu arvo. Alla havainnollistava taulukko neljästä esitellystä muuttujasta. 
 
-<table border=2>
-    <tr>
-        <td><b>Tunniste</b></td>
-        <td><b>Arvo</b></td>
-        <td><b>Tyyppi</b></td>
-    </tr>
-    <tr>
-        <td>nimi</td>
-        <td>Matti Meikäläinen</td>
-        <td>Merkkijono</td>
-    </tr>
-    <tr>
-        <td>syntymavuosi</td>
-        <td>1994</td>
-        <td>Kokonaisluku</td>
-    </tr>
-    <tr>
-        <td>paino</td>
-        <td>80.5</td>
-        <td>Desimaaliluku</td>
-    </tr>
-    <tr>
-        <td>elossa</td>
-        <td>True</td>
-        <td>Totuusarvo</td>
-    </tr>
-</table>
-<br />
-Muuttujan esittelyn jälkeen niiden sisältämään arvoon on mahdollista viitata koodista tunnisteen avulla sekä tietysti muuttuja nimen mukaisesti muuttaa muuttujan arvoa. Otetaan vaikka esimerkki tapauksesta jossa paino nousee 1.5kg on tämä mahdollista esittää seuraavasti. 
+|  Tunniste    | Arvo              | Tyyppi        |
+|--------------|-------------------|---------------|
+| nimi         | Matti Meikäläinen | Merkkijono    |
+| syntymavuosi | 1994              | Kokonaisluku  |
+| paino        | 80.5              | Desimaaliluku |
+| elossa       | True              | Totuusarvo    |
+
+Kun muuttuja on esitelty on tähän mahdollista viitata muualta koodista jos vaikka haluaa käyttää sitä laskutoimituksessa tai sijoittaa muuttujaan uuden arvon. 
+Mikäli haluamme nostaa paino muuttujan arvoa 1.5kg on tämä mahdollista tehdä seuraavasti. 
 
 ```python
 paino = 80.5
 paino = paino + 1.5
 ```
 
-<table border=2>
-    <tr>
-        <td><b>Tunniste</b></td>
-        <td><b>Arvo</b></td>
-        <td><b>Tyyppi</b></td>
-    </tr>
-    <tr>
-        <td>paino</td>
-        <td>82.0</td>
-        <td>Desimaaliluku</td>
-    </tr>
-</table>
-<br />
+|  Tunniste    | Arvo              | Tyyppi        |
+|--------------|-------------------|---------------|
+| paino        | 82.0              | Desimaaliluku |
 
-Ylläolevassa koodissa viitataan paino-nimisen muuttujan sisältämään arvoon ja lisätään tähän 1.5kg. Kun lopputulos on saatu sijoitetaan tämä takaisin paino-nimiseen muuttujaan jolloin arvo päivittyy. Halutessa voimme säilyttää vanhan painon sijoittamalla lopputuloksen uuteen muuttujaan.
+Ylläolevassa koodinpätkässä viitataan toteutetaan laskutoimitus jossa viitataan paino nimisen muuttujan arvoon. Kun laskutoimitus on suoritettu sijoitetaan lopputulos samaan paino muuttujaan sijoitusoperaattorilla(**=**) jolloin arvo päivittyy. 
 
+Halutessa voimme säilyttää vanhan painon **sijoittamalla lopputuloksen uuteen muuttujaan**.
+
+**Esim:**
 ```python
 paino = 80.5
 uusipaino = paino + 1.5
 ```
 
-<table border=2>
-    <tr>
-        <td><b>Tunniste</b></td>
-        <td><b>Arvo</b></td>
-        <td><b>Tyyppi</b></td>
-    </tr>
-    <tr>
-        <td>paino</td>
-        <td>80.5</td>
-        <td>Desimaaliluku</td>
-    </tr>
-    <tr>
-        <td>uusipaino</td>
-        <td>82.0</td>
-        <td>Desimaaliluku</td>
-    </tr>
-</table>
-<br />
+|  Tunniste    | Arvo              | Tyyppi        |
+|--------------|-------------------|---------------|
+| paino        | 80.5              | Desimaaliluku |
+| uusipaino    | 82.0              | Desimaaliluku |
+
+**Esim:**
+```python
+paino = 80.5
+uusipaino = paino + 1.5
+muutos = uusipaino - paino
+```
+
+|  Tunniste    | Arvo              | Tyyppi        |
+|--------------|-------------------|---------------|
+| paino        | 80.5              | Desimaaliluku |
+| uusipaino    | 82.0              | Desimaaliluku |
+| muutos       | 1.5               | Erotus        |
+
+# Kommentit
+
+Koodiin kommenttien lisäys onnistuu \# merkillä. Python tulkki ohittaa kommenttirivit ohjelmakoodia kääntäessään joten niitä voi käyttää muistiinpanojen tekoon tai koodin toiminnallisuuden dokumentoimiseen. Muistiinpanojen lisääminen koodiin kommenttien on suotavaa erityisesti ohjelmoinnin opiskelun alkuvaiheessa jotta voi tarvittaessa luntata mitä jokin asia tarkoittikaan. 
+
+```python
+# Sijoitetaan merkkijono Matti Meikäläinen muuttujaan nimi.
+nimi = "Matti Meikäläinen"
+# tulostetaan nimi komentoriville print funktiolla.
+print(nimi)
+```
 
 # Tietotyypit
 
 Tietotyyppi on muuttujan arvon ominaisuus joka kertoo tietokoneelle minkälaisesta tiedosta on kyse ja miten sitä voi käsitellä. Pythonin sisäänrakennettuihin perustietotyyppeihin kuuluu mm. kokonaisluku, liukuluku, merkkijono ja totuusarvo. 
 
-
-
-
 Luo uusi tiedosto ja anna sen nimeksi vaikka muuttujat.py jotta pääset itse kokeilemaan ja muokkaamaan seuraavia koodiesimerkkejä käytännössä. 
 
 ## kokonaisluku (engl. integer, int)
 
-
+Kokonaisluvuilla kuvataan yleensä lukumääriä, järjestysnumeroa tai taulukon soluja. 
+Otetaan esimerkiksi tilanne jossa pelaajan kokonaispisteet kerrotaan kertoimella. 
 
 ```python
-arvo1 = 10
-arvo2 = 20
-summa = arvo1 + arvo2
-print(summa)
+# kokonaispisteet muuttujaan sijoitetaan arvo 100
+kokonaispisteet = 100
+
+# kerroin muuttujaan sijoitetaan arvo 5
+kerroin = 5
+
+# kerrotaan kokonaispisteet arvo kerroin muuttujan arvolla.
+# sijoitetaan lopputulos kokonaispisteet muuttujaan.
+kokonaispisteet = kokonaispisteet * kerroin
+
+# tulostetaan kokonaispisteet muuttujan arvo komentoriville.
+print(kokonaispisteet)
+```
+
+## Desimaaliluku eli liukuluku (engl. floating-point, float)
+
+Koska äärettömän tarkkuuden esittämiseen tarvitaan ääretön määrä muistia tyydytään desimaalilukujen kanssa yleensä 32 tai 64 bittisiin desimaalilukuihin. Näitä kutsutaan liukuluvuiksi. Liukuluvuissa desimaaliarvon tarkkuus heikkenee kokonaisosan merkkimäärän kasvaessa mikä voi johtaa pyöristysvirheisiin.  
+
+```python
+a = 1.0
+pi = 3.14159265359
+tulos = a / b
+print(tulos)
 ```
