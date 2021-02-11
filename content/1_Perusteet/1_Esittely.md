@@ -5,15 +5,35 @@ draft: false
 
 ## Alkusanat
 
-Tämä on kevyt opas __Python__ ohjelmointikielelle. Päädyin kirjoittamaan oppaan suomen kielellä koska englanninkielisiä oppaita löytyy jo pilmin pimein. Uskon myös, että äidinkielellä asioiden opiskelu on monelle helpompaa. Pyrin kuitenkin tuomaan esille suluissa myös joidenkin asioiden englanninkielisiä termejä, jotta niistä on helpompi hakea lisätietoja. Oppaassa pyrin käymään asiat yleisluontoisesti läpi takertumatta liikaa nippelitietoihin tai kielen erityisominaisuuksiin. Nämä ovat mielestäni sellaisia asioita joihin kannattaa perehtyä vasta kun perusteet ovat hallussa tai niitä oikeasti tarvitsee. Pyrin myös kirjottamaan koodin tavalla joka vastaa lähemmin muita ohjelmointikieliä mikä toivottavasti auttaa opetellessa myös muita ohjelmointikieliä.  
+Tämän oppaan kirjoittamisen tarkoituksena on tarjota kevyt opas ohjelmointiin **Python** ohjelmointikielellä. Tavoitteena on välttää turhaa jaarittelua, keskittyä oleennaiseen ja käsitellä aiheet kompaktisti takertumatta nippelitietoihin ja täten välttyä [informaatioähkyltä](https://fi.wikipedia.org/wiki/Informaatio%C3%A4hky). 
+
+Kirjoitan oppaan suomeksi sillä uskon että ohjelmoinnin perusteet on helpompi sisäistää omalla äidinkielellän. Tulen käyttämään suomen kieltä myös koodissa mikä mielestäni toimii erinomaisesti korostamaan asioita jotka käyttäjä voi ohjelmakoodissa nimetä haluamallaan tavalla. Tulen kuitenkin tuomaan englanninkieliset termit aktiivisesti tekstissä esille jotta myös englanninkieliset termit tulevat tutuksi.
+
+Pyrin myös kirjoitamaan koodin syntaksin (**engl. syntax**) tavalla joka vastaa lähemmin muita ohjelmointikieliä jonka toivon helpottavan muiden ohjelmointikielien opiskelua ja ymmärtämistä. 
+
+&nbsp;&nbsp;
 
 ## Ohjelmoinnin opiskelu
 
-Ohjelmointi tai ohjelmistokehitys on aihealueena todella laaja. Monella voi tulla seinä vastaan jo siinä vaiheessa kun yrittää päättellä mistä kannattaisi aloittaa sillä kieliä, työkaluja, termejä ja aihealueita on niin valtavasti. Aloittaessa tuntee taas itsensä helposti tyhmäksi joka saattaa olla hyvinkin turhauttavaa sillä sisäistettävää on todella paljon ja monet asiat on helppo ymmärtää väärin.
+Ohjelmistokehitys on todella laaja aihealue jonka vuoksi ei ole kovin ilmiselvää edes mistä kannattaisi aloittaa. Erityisesti opiskelun alkuvaiheessa sisäistettävää on paljon ja monet asiat on helppo ymmärtää väärin, tämä johtaa herkästi turhautumiseen ja moni saattaa tuntea itsensä jopa tyhmäksi. Tästä ei kuitenkaan kannata lannistautua sillä kun perusteet saa jollain tasolla haltuun niin myös turhautuminen vähenee merkittävästi.
 
-Näistä ei kannata kuitenkaan lannistua sillä ohjelmointi vaatii paljon omatoimista harjottelua ja kokeilua jotta perusteet saa sisäistettyä. Sinnikkyys palkitaan ahaa elämyksillä ja ohjelmointiin liittyvä turhautuminen vähenee usein merkittävästi. Kun yksi ohjelmointikieli on hallussa on toisen oppiminen merkittävästi helpompaa. 
+Ohjelmointia opetellessa ei kannata yrittää haukata liian isoa palaa kerralla vaan keskittyä yhteen asiaan. 
 
-Ohjelmointia opiskellessa on myös helppo yrittää haukata liian isoa palaa kerralla, erityisesti jos on jokin asia jo mielessä jota haluaisi lähteä kehittämään kuten vaikka peli, verkkopalvelu tai tietokantasovellus. Kannattaa kuitenkin välttää kiusausta ja keskittyä perusteisiin ja säästä loppupeleissä aikaa välttämällä monta sudenkuoppaa ja potentuaalista turhautumista joka yleensä liittyy siihen kun yrittää sisäistää montaa asiaa keralla. 
+### Esimerkki opintopolku ohjelmoinin opiskeluun
+
+
+1. Ohjelmoinnin perusteet
+2. Olio-ohjelmoinnin perusteet
+3. Suuntaus
+   - a) Peliohjelmointi (**esim. Pygame, Godot,  Unity3D**)
+   - b) Web-ohjelmointi (**esim. Django, Flask**)
+   - c) Graafiset käyttöliittymät (**esim. TKinter, kivy, PyQT**)
+   - d) Toinen ohjelmointikieli (**esim. Javascript/TypeScript, C#, Java, Rust, Go**)
+     - kielen oppiminen merkittävästi nopeampaa kun perusteet on jo hallussa.
+
+Mikäli ohjelmoinnista haluaa tehdä ammatin kannattaa varautua elinikäiseen oppimiseen. Uusien työkalujen, ohjelmien ja palveluiden opettelu on alalla arkipäivää ja vain harva tulee töissään toimeen vain yhdellä ohjelmointikiellellä. 
+
+&nbsp;&nbsp;
 
 # Python 
 

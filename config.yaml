@@ -1,0 +1,14 @@
+relativeURLs: true
+title: "Python ohjelmointiopas"
+theme: "code-focus"
+pygmentsUseClasses: true 
+languageName: "Finnish"
+languageCode: "fi-FI"
+
+Taxonomies:
+  tag: tags
+
+Params:
+  Author: "Pasi Österman"
+  Description: "Ohjelmoinnin perusteet Pythonilla, minimaalisella jaarittelulla."
+  Keywords: ["Python", "ohjelmointi", "ohje", "opas", "perusteet"]
