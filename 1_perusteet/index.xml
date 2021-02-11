@@ -12,7 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/1_perusteet/1_esittely/</guid>
-      <description>Alkusanat Tämä on kevyt opas Python ohjelmointikielelle. Päädyin kirjoittamaan oppaan suomen kielellä koska englanninkielisiä oppaita löytyy jo pilmin pimein. Uskon myös, että äidinkielellä asioiden opiskelu on monelle helpompaa. Pyrin kuitenkin tuomaan esille suluissa myös joidenkin asioiden englanninkielisiä termejä, jotta niistä on helpompi hakea lisätietoja. Oppaassa pyrin käymään asiat yleisluontoisesti läpi takertumatta liikaa nippelitietoihin tai kielen erityisominaisuuksiin. Nämä ovat mielestäni sellaisia asioita joihin kannattaa perehtyä vasta kun perusteet ovat hallussa tai niitä oikeasti tarvitsee.</description>
+      <description>Alkusanat Tämän oppaan kirjoittamisen tarkoituksena on tarjota kevyt opas ohjelmointiin Python ohjelmointikielellä. Tavoitteena on välttää turhaa jaarittelua, keskittyä oleennaiseen ja käsitellä aiheet kompaktisti takertumatta nippelitietoihin ja täten välttyä informaatioähkyltä.
+Kirjoitan oppaan suomeksi sillä uskon että ohjelmoinnin perusteet on helpompi sisäistää omalla äidinkielellän. Tulen käyttämään suomen kieltä myös koodissa mikä mielestäni toimii erinomaisesti korostamaan asioita jotka käyttäjä voi ohjelmakoodissa nimetä haluamallaan tavalla. Tulen kuitenkin tuomaan englanninkieliset termit aktiivisesti tekstissä esille jotta myös englanninkieliset termit tulevat tutuksi.</description>
     </item>
     
     <item>
@@ -53,7 +54,8 @@ Visual Studio Code Koska koodin kirjoittaminen muistiolla on nykypäivänä tiet
       
       <guid>/1_perusteet/5_muuttujat/</guid>
       <description>Ohjelmoinnissa muuttujat koostuvat tunnisteesta (engl. identifier) ja muuttujan sisältämästä arvosta (eng. value). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.
-nimi = &amp;#34;Matti Meikäläinen&amp;#34; syntymavuosi = 1994 paino = 80.5 elossa = True Ylläolevassa esimerkissä esitellään 4 muuttujaa joihin sijoitetaan yhtäsuuruusmerkki(=) sijoitusoperaattorilla (engl. Assignment Operator) haluttu arvo. Alla havainnollistava taulukko neljästä esitellystä muuttujasta.
+nimi = &amp;#34;Matti Meikäläinen&amp;#34; syntymavuosi = 1994 paino = 80.5 elossa = True Yllä olevassa esimerkissä esitellään 4 muuttujaa joihin sijoitetaan yhtäsuuruusmerkki(=) sijoitusoperaattorilla (engl. Assignment Operator) haluttu arvo.
+Alla havainnollistava taulukko neljästä esitellystä muuttujasta.
    Tunniste Arvo Tyyppi     nimi Matti Meikäläinen Merkkijono   syntymavuosi 1994 Kokonaisluku   paino 80.</description>
     </item>
     

@@ -36,11 +36,19 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/tags/kokonaisluku/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/merkkijono/</loc>
   </url>
   
   <url>
     <loc>/muut/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/muuttujat/</loc>
   </url>
   
   <url>
