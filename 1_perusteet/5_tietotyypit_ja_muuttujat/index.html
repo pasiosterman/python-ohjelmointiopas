@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html><head>
-    <title>Python ohjelmointiopas - 5_Muuttujat</title>
+<html lang="fi">
+<head>
+    <title>Python ohjelmointiopas - 5_Tietotyypit_ja_muuttujat</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/syntax.css">
-</head><body>
+    
+    <meta name="description" content="Ohjelmoinnin perusteet Pythonilla, minimaalisella jaarittelulla.">
+    <meta name="keywords" content="Python, ohjelmointi, ohje, opas, perusteet"></head><body>
     <div class="left-window">
-        <div class="content"><h1>5_Muuttujat</h1><p>Ohjelmoinnissa muuttujat koostuvat tunnisteesta (<strong>engl. identifier</strong>) ja muuttujan sisältämästä arvosta (<strong>eng. value</strong>). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.</p>
+        <div class="content"><h1>5_Tietotyypit_ja_muuttujat</h1><h2 id="muuttujat">Muuttujat</h2>
+<p>Ohjelmoinnissa muuttujat koostuvat tunnisteesta (<strong>engl. identifier</strong>) ja muuttujan sisältämästä arvosta (<strong>eng. value</strong>). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">nimi</span> <span class="o">=</span> <span class="s2">&#34;Matti Meikäläinen&#34;</span>
 <span class="n">syntymavuosi</span> <span class="o">=</span> <span class="mi">1994</span>
 <span class="n">paino</span> <span class="o">=</span> <span class="mf">80.5</span>
@@ -189,27 +195,30 @@ Otetaan esimerkiksi tilanne jossa pelaajan kokonaispisteet kerrotaan kertoimella
 <p>Otetaan esimerkkinä vaikka tapaus jossa halutaan tieto siitä onko luku1 pienempi tai suurempi kuin luku2.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># sijoitetaan luku1 muuttujaan kokonaisluku 2</span>
 <span class="n">luku1</span> <span class="o">=</span> <span class="mi">2</span>
-
 <span class="c1"># sijoitetaan luku2 muuttujaan kokonaisluku 1</span>
 <span class="n">luku2</span> <span class="o">=</span> <span class="mi">1</span>
 
 <span class="c1"># verrataan onko luku1 suurempi kuin luku2</span>
 <span class="c1"># sijoitetaan lopptulos suurempi nimiseen muuttujaan</span>
 <span class="n">suurempi</span> <span class="o">=</span> <span class="n">luku1</span> <span class="o">&gt;</span> <span class="n">luku2</span>
+<span class="k">print</span><span class="p">(</span><span class="n">suurempi</span><span class="p">)</span>
+<span class="c1"># tulostaa: True</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># sijoitetaan luku1 muuttujaan kokonaisluku 2</span>
+<span class="n">luku1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="c1"># sijoitetaan luku2 muuttujaan kokonaisluku 1</span>
+<span class="n">luku2</span> <span class="o">=</span> <span class="mi">5</span>
 
 <span class="c1"># verrataan onko luku1 pienempi kuin luku2</span>
 <span class="c1"># sijoitetaan lopputulos pienempi nimiseen muuttujaan.</span>
 <span class="n">pienempi</span> <span class="o">=</span> <span class="n">luku1</span> <span class="o">&lt;</span> <span class="n">luku2</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">suurempi</span><span class="p">)</span>
-<span class="c1"># tulostaa: True</span>
 <span class="k">print</span><span class="p">(</span><span class="n">pienempi</span><span class="p">)</span>
 <span class="c1"># tulostaa: False</span>
 </code></pre></div><hr>
 <h1 id="merkkijono-engl-string">Merkkijono (<strong>engl. String</strong>)</h1>
-<p>Merkkijonoja voi ajatella tekstille tarkoitettuna tietotyyppinä. Teknisesti kyseessä on yksiulotteinen taulukko mikä voi sisältää melkeinpä mitä vain kirjaimia, merkkejä ja numeroita.
-Ohjelmakoodissa merkkijonon voi alustaa kirjoittamalla tekstiä lainausmerkkien(<strong>&quot;&quot;</strong>) sisään.</p>
-<p><strong>Havainnollistava taulukko merkkijonosta &ldquo;Terve maailma!&quot;:</strong></p>
+<p>Merkkijonoja voi ajatella tekstille tarkoitettuna tietotyyppinä. Teknisesti kyseessä on yksiulotteinen taulukko mikä voi sisältää kirjaimia, merkkejä ja numeroita.
+Ohjelmakoodissa merkkijono on mahdollista esitellä kirjoittamalla tekstiä lainausmerkkien(<strong>&quot;&quot;</strong>) tai heittomerkkien (<strong>''</strong>) sisään.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tervehdys</span> <span class="o">=</span> <span class="s2">&#34;Terve maailma!&#34;</span>
+</code></pre></div><p><strong>Havainnollistava taulukko merkkijonosta &ldquo;Terve maailma!&quot;:</strong></p>
 <table>
 <thead>
 <tr>
@@ -249,38 +258,53 @@ Ohjelmakoodissa merkkijonon voi alustaa kirjoittamalla tekstiä lainausmerkkien(
 </tbody>
 </table>
 <p>Taulukot tai pythonin tapauksessa listat käsitellään myöhemmässä osiossa.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># sijoitetaan merkkijono Terve muuttujaan &#34;tervehdys&#34;</span>
-<span class="n">tervehdys</span> <span class="o">=</span> <span class="s2">&#34;Terve&#34;</span>
-<span class="c1"># lisätään merkkijono tervehdykseen merkkijono &#34; maailma!&#34;</span>
-<span class="c1"># huom: myös välilyönti on merkki.</span>
-<span class="n">tervehdys</span> <span class="o">=</span> <span class="n">tervehdys</span> <span class="o">+</span> <span class="s2">&#34; maailma!&#34;</span>
-<span class="c1"># sijoitetaan muuttujaan merkkijonon seitsemäs merkki</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># sijoitetaan tervehdys muuttujaan merkkijono arvolla &#34;tervehdys&#34;</span>
+<span class="n">tervehdys</span> <span class="o">=</span> <span class="s2">&#34;Terve maailma!&#34;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tervehdys</span><span class="p">)</span>
+<span class="c1"># tulostaa Terve Maailma!</span>
+
+<span class="c1"># sijoitetaan kirjain muuttujaan merkkijonon seitsemäs merkki</span>
 <span class="c1"># järjestysnumero on 6 koska taulukko alkaa nollasta.</span>
 <span class="n">kirjain</span> <span class="o">=</span> <span class="n">tervehdys</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">tervehdys</span><span class="p">)</span>
-<span class="c1"># tulostaa Terve Maailma!</span>
 <span class="k">print</span><span class="p">(</span><span class="s2">&#34;merkki: &#34;</span> <span class="o">+</span> <span class="n">kirjain</span><span class="p">)</span>
 <span class="c1"># tulostaa merkki: m</span>
-</code></pre></div><h3 id="pakomerkki-engl-escape-character">Pakomerkki (<strong>engl. Escape character</strong>)</h3>
-<p>Pakomerkkinä Pythonissa toimii vinoviiva(<strong>/</strong>) ja sen avulla on mahdollista lisätä merkkijonoon mm. rivivaihtoja(<strong>\n</strong>) ja tabulaattori painalluksia(<strong>\t</strong>). Pakomerkit mahdollistavat myös lainausmerkkien käyttämisen merkkijonoissa (<strong>&quot;</strong>).</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># sijoitetaan merkkijono jossa on lainausmerkkejä sananlasku muuttujaan</span>
-<span class="n">sananlasku</span> <span class="o">=</span> <span class="s2">&#34;Sananlasku: </span><span class="se">\&#34;</span><span class="s2">Ei kukaan ole seppä syntyessään</span><span class="se">\&#34;</span><span class="s2">&#34;</span>
-<span class="c1"># sijoiteaan merkkijono jossa on rivinvaihto monirivi muuttujaan</span>
-<span class="n">monirivi</span> <span class="o">=</span> <span class="s2">&#34;eka rivi </span><span class="se">\n</span><span class="s2">toka rivi&#34;</span>
-<span class="c1"># sijoitetaan merkkijono jossa on sarkain siirtymä sarkain muuttujaan</span>
-<span class="n">sarkain</span> <span class="o">=</span> <span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> tabulaattori painallus&#34;</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Sijoitetaan tervehdys muuttujaan merkkijono arvolla &#34;tervehdys&#34;</span>
+<span class="n">tervehdys</span> <span class="o">=</span> <span class="s2">&#34;Terve maailma!&#34;</span>
+<span class="c1"># Sijoitetaan kirjain muuttujaan tervehdys merkkijonon seitsemäs merkki</span>
+<span class="c1"># järjestysnumero on 6 koska taulukko alkaa nollasta.</span>
+<span class="n">kirjain</span> <span class="o">=</span> <span class="n">tervehdys</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">sananlasku</span><span class="p">)</span>
-<span class="c1"># tulostaa: Sananlasku: &#34;Ei kukaan ole seppä syntyessään&#34;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">monirivi</span><span class="p">)</span>
-<span class="c1"># tulostaa: </span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;merkki: &#34;</span> <span class="o">+</span> <span class="n">kirjain</span><span class="p">)</span>
+<span class="c1"># tulostaa merkki: m</span>
+</code></pre></div><h3 id="pakomerkki-merkkijonoissa-engl-escape-character">Pakomerkki merkkijonoissa (<strong>engl. Escape character</strong>)</h3>
+<p>Pakomerkkinä Pythonissa toimii kenoviiva(<strong>\</strong>). Pakomerkkien avulla on mahdollista lisätä merkkijonoon rivinvaihtoja, sarkain siirtymiä ja erikoismerkkejä. Pakomerkit mahdollistavat myös lainausmerkkien tai heittomerkkien käytön merkkijonossa jotka normaalisti katkaisisivat merkkijonon esittelyn.</p>
+<p><strong>Lainausmerkit pakomerkillä (\&quot;)</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># sijoitetaan tuloste muuttujaan merkkijono jossa on lainausmerkkejä.</span>
+<span class="n">tuloste</span> <span class="o">=</span> <span class="s2">&#34;Sananlasku: </span><span class="se">\&#34;</span><span class="s2">Ei kukaan ole seppä syntyessään</span><span class="se">\&#34;</span><span class="s2">&#34;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tuloste</span><span class="p">)</span>
+<span class="c1"># Tulostaa: </span>
+<span class="c1"># Sananlasku: &#34;Ei kukaan ole seppä syntyessään&#34;</span>
+</code></pre></div><p><strong>Rivivaihto pakomerkillä (\n)</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Sijoiteaan tuloste muuttujaan merkkijono jossa on rivinvaihto.</span>
+<span class="n">tuloste</span> <span class="o">=</span> <span class="s2">&#34;eka rivi </span><span class="se">\n</span><span class="s2">toka rivi&#34;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tuloste</span><span class="p">)</span>
+<span class="c1"># Tulostaa: </span>
 <span class="c1">#eka rivi</span>
 <span class="c1">#toka rivi</span>
-<span class="k">print</span><span class="p">(</span><span class="n">sarkain</span><span class="p">)</span>
+</code></pre></div><p><strong>Sarkainsiirtymä pakomerkillä (\t)</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Sijoitetaan tuloste muuttujaan merkkijono jossa on sarkain siirtymä.</span>
+<span class="n">tuloste</span> <span class="o">=</span> <span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> tabulaattori painallus.&#34;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tuloste</span><span class="p">)</span>
 <span class="c1"># Tulostaa</span>
         <span class="c1">#Tabulaattori painallus</span>
-</code></pre></div><h3 id="monirivinen--merkkijono">Monirivinen  merkkijono</h3>
+</code></pre></div><p><strong>Erikoismerkki pakomerkillä (\u+koodi)</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Sijoitetaan tuloste muuttujaan merkkijono jossa on tekijänoikeusmerkki.</span>
+<span class="n">tuloste</span> <span class="o">=</span> <span class="s2">&#34;erikoismerkki: </span><span class="se">\u00a9</span><span class="s2"> &#34;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tuloste</span><span class="p">)</span>
+</code></pre></div><p>Tulostaa:
+erikoismerkki ©</p>
+<h3 id="monirivinen--merkkijono">Monirivinen  merkkijono</h3>
 <p>Pythonissa pidemmät merkkijonot on mahdollista esitellä kolmella lainausmerkillä (<strong>&quot;&quot;&quot;</strong>). Tämä kertoo Python tulkille, että merkkijono jatkuu aina seuraavaan kolmeen lainausmerkkiin asti.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pitka_teksti</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;
 </span><span class="s2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -299,7 +323,7 @@ Ohjelmakoodissa merkkijonon voi alustaa kirjoittamalla tekstiä lainausmerkkien(
     </div>
     <div class="right-window">
         <div class="navigation">
-            <h1><a href="../../">Python ohjelmointiopas</a></h1><ul><li>1_Perusteet<ul><li><a href="../../1_perusteet/1_esittely/">1_Esittely</a></li><li><a href="../../1_perusteet/2_pythonasennus/">2_Pythonin_asennus</a></li><li><a href="../../1_perusteet/3_komentorivi/">3_Komentorivi</a></li><li><a href="../../1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/">4_Python_kehitysympäristö</a></li><li>5_Muuttujat</li><li><a href="../../1_perusteet/6_tyyppimuunnokset/">6_Tyyppimuunnokset</a></li></ul>
+            <h1><a href="../../">Python ohjelmointiopas</a></h1><ul><li>1_Perusteet<ul><li><a href="../../1_perusteet/1_esittely/">1_Esittely</a></li><li><a href="../../1_perusteet/2_pythonasennus/">2_Pythonin_asennus</a></li><li><a href="../../1_perusteet/3_komentorivi/">3_Komentorivi</a></li><li><a href="../../1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/">4_Python_kehitysympäristö</a></li><li>5_Tietotyypit_ja_muuttujat</li><li><a href="../../1_perusteet/6_matemaattiset_operaattorit/">6_Matemaattiset operaattorit</a></li><li><a href="../../1_perusteet/7_tyyppimuunnokset/">7_Tyyppimuunnokset</a></li><li><a href="../../1_perusteet/8_ehtolausekkeet/">8_Ehtolausekkeet</a></li></ul>
     </li><li>Muut<ul><li><a href="../../muut/pathmuuttujanmuokkaus/">Path-muuttujan muokkaus</a></li><li><a href="../../muut/termeja/">Termejä</a></li></ul>
     </li></ul></div>
     </div>

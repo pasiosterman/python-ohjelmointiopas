@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <title>Python ohjelmointiopas - 6_Matemaattiset operaattorit</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/syntax.css">
+    
+    <meta name="description" content="Ohjelmoinnin perusteet Pythonilla, minimaalisella jaarittelulla.">
+    <meta name="keywords" content="Python, ohjelmointi, ohje, opas, perusteet"></head><body>
+    <div class="left-window">
+        <div class="content"><h1>6_Matemaattiset operaattorit</h1><p>Matemaattiset operaattorit mahdollistavat erillaisten laskutoimitusten suorittamisen ohjelmakoodissa. Käytimme näistä muutamaa edellisessä osiossa käsitellessämme muuttujia, kokonaislukuja ja liukulukuja. Matemaattisten operaattorien käyttötarkoitukset eivät kuitenkaan rajoitu pelkästään perinteisiin matematiikasta tuttuihin laskutoimituksiin sillä esimerkiksi lisäysoperaattorilla on mahdollista yhdistää merkkijonoja toisiinsa ja vähennysoperaattoria voi käyttää vaikkapa päivämäärien kanssa.</p>
+<p><strong>Matemaattiset operaattorit.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Operaattori</th>
+<th>Nimi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>lisäys</td>
+</tr>
+<tr>
+<td>-</td>
+<td>vähennys</td>
+</tr>
+<tr>
+<td>*</td>
+<td>kerroin</td>
+</tr>
+<tr>
+<td>/</td>
+<td>jako</td>
+</tr>
+<tr>
+<td>%</td>
+<td>jakojäännös</td>
+</tr>
+<tr>
+<td>**</td>
+<td>eksponentti</td>
+</tr>
+</tbody>
+</table>
+<p>  </p>
+<hr>
+<h2 id="lausekkeet-engl-statements">Lausekkeet (<strong>engl. statements</strong>)</h2>
+<p>Laskutoimitukset operaattorien kanssa suoritetaan ohjelmointikielissä lausekkeissa jotka Pythonissa päättyvät tyypillisesti rivivaihtoon. Tämä poikkeaa hieman C-sukuisista kielistä  jossa lausekkeet päätetään puolipisteeseen (<strong>;</strong>).</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">luku</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># lauseke 1</span>
+<span class="n">luku</span> <span class="o">=</span> <span class="n">luku</span> <span class="o">+</span> <span class="mi">20</span> <span class="c1"># lauseke 2</span>
+<span class="n">luku</span> <span class="o">=</span> <span class="n">luku</span> <span class="o">*</span> <span class="n">luku</span> <span class="c1"># lauseke 3</span>
+<span class="k">print</span><span class="p">(</span><span class="n">luku</span><span class="p">)</span> <span class="c1"># lauseke 4</span>
+</code></pre></div><p>Lauseen päättäminen puolisteeseen (<strong>;</strong>) on mahdollista myös Pythonissa. Puolipisteen avulla voi kirjoittaa useamman lausekkeen samalle riville.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 4 lauseketta samalla rivillä puolipisteellä eroteltuna.</span>
+<span class="n">etunimi</span> <span class="o">=</span> <span class="s2">&#34;Matti&#34;</span><span class="p">;</span> <span class="n">sukunimi</span> <span class="o">=</span> <span class="s2">&#34;Meikäläinen&#34;</span><span class="p">;</span> <span class="n">kokonimi</span> <span class="o">=</span> <span class="n">etunimi</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="n">sukunimi</span><span class="p">;</span> <span class="k">print</span><span class="p">(</span><span class="n">kokonimi</span><span class="p">)</span>
+</code></pre></div><p>Hyvänä nyrkkisääntönä luettavuuden kannalta on kuitenkin laittaa lausekkeet omalle rivilleen ohjelmointikielestä riippumatta.</p>
+<p>  </p>
+<hr>
+<h2 id="yhteenlasku--engl-addition-operator">Yhteenlasku (<strong>+</strong>) (<strong>engl. Addition operator</strong>)</h2>
+<p>Yhteenlaskut tapahtuu tutulla plus-merkillä.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tulos</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tulos</span><span class="p">)</span>
+<span class="c1"># tulostaa 10</span>
+</code></pre></div><p>Merkkijonojen lisääminen toisiinsa onnistuu sekä muuttujien ja suoraan lausekkeessa esiteltyjen</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">etunimi</span> <span class="o">=</span> <span class="s2">&#34;Matti&#34;</span>
+<span class="n">sukunimi</span> <span class="o">=</span> <span class="s2">&#34;Meikäläinen&#34;</span>
+<span class="c1"># lisätään kokonimi muuttujaan etunimi + välilyönti + sukunimi</span>
+<span class="n">kokonimi</span> <span class="o">=</span> <span class="n">etunimi</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="n">sukunimi</span>
+<span class="k">print</span><span class="p">(</span><span class="n">kokonimi</span><span class="p">)</span>
+</code></pre></div><p>  </p>
+<hr>
+<h2 id="vähennyslasku---engl-substraction-operator">Vähennyslasku (<strong>-</strong>) (<strong>engl. Substraction operator</strong>)</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tulos</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">-</span> <span class="mi">25</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tulos</span><span class="p">)</span>
+<span class="c1"># tulostaa 75</span>
+</code></pre></div><p>  </p>
+<hr>
+<h2 id="kertolasku--engl-multiplication-operator">Kertolasku (<strong>*</strong>) (<strong>engl. Multiplication operator</strong>)</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tulos</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tulos</span><span class="p">)</span>
+<span class="c1"># tulostaa 10</span>
+</code></pre></div><p>  </p>
+<hr>
+<h2 id="jakolasku--engl-division-operator">Jakolasku (<strong>/</strong>) (<strong>engl. Division operator</strong>)</h2>
+<p>Jakolaskun voi suorittaa pythonissa vinoviivalla. Yhdellä vinoviivalla jakolasku palauttaa tuloksen aina liukulukuna.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tulos</span> <span class="o">=</span> <span class="mi">25</span> <span class="o">/</span> <span class="mi">5</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tulos</span><span class="p">)</span>
+<span class="c1"># tulostaa 5.0</span>
+</code></pre></div><p>Käyttämällä kahta vinoviivaa(<strong>//</strong>) on kuitenkin mahdollista saada tulos alaspäin pyöristettynä kokonaislukuna.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tulos</span> <span class="o">=</span> <span class="mi">25</span> <span class="o">//</span> <span class="mi">5</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tulos</span><span class="p">)</span>
+<span class="c1"># tulostaa 5</span>
+</code></pre></div><p>  </p>
+<hr>
+<h2 id="jakojäännös--engl-modulus-operator">Jakojäännös (<strong>%</strong>) (<strong>engl. Modulus operator</strong>)</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tulos</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tulos</span><span class="p">)</span>
+<span class="c1"># tulostaa 2</span>
+</code></pre></div><p>  </p>
+<hr>
+<h2 id="laskujärjestys">Laskujärjestys</h2>
+<p>Lausekkeissa kannattaa olla tarkkana laskujärjestyksen kanssa sillä <strong>kertolaskut</strong>, <strong>jakolaskut</strong> sekä <strong>jakojäännös</strong> lasketaan aina ennen <strong>yhteenlaskuja</strong> ja <strong>vähennyslaskuja</strong>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tulos</span> <span class="o">=</span>  <span class="mi">5</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tulos</span><span class="p">)</span>
+<span class="c1"># Tulostaa 55</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tulos</span> <span class="o">=</span>  <span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">5</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tulos</span><span class="p">)</span>
+<span class="c1"># Tulostaa myös 55</span>
+</code></pre></div><p><strong>Laskujärjestys taulukko:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>1.</strong></th>
+<th><strong>2.</strong></th>
+<th><strong>3.</strong></th>
+<th><strong>4.</strong></th>
+<th><strong>5.</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>/</td>
+<td>%</td>
+<td>+</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>Laskujärjestystä on mahdollista muokata sulkujen avulla. Sulkujen käyttö on suotavaa myös luettavuuden kannalta.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">tulos</span> <span class="o">=</span>  <span class="p">(</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tulos</span><span class="p">)</span>
+<span class="c1"># Tulostaa 75</span>
+</code></pre></div>
+        </div>
+    </div>
+    <div class="right-window">
+        <div class="navigation">
+            <h1><a href="../../">Python ohjelmointiopas</a></h1><ul><li>1_Perusteet<ul><li><a href="../../1_perusteet/1_esittely/">1_Esittely</a></li><li><a href="../../1_perusteet/2_pythonasennus/">2_Pythonin_asennus</a></li><li><a href="../../1_perusteet/3_komentorivi/">3_Komentorivi</a></li><li><a href="../../1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/">4_Python_kehitysympäristö</a></li><li><a href="../../1_perusteet/5_tietotyypit_ja_muuttujat/">5_Tietotyypit_ja_muuttujat</a></li><li>6_Matemaattiset operaattorit</li><li><a href="../../1_perusteet/7_tyyppimuunnokset/">7_Tyyppimuunnokset</a></li><li><a href="../../1_perusteet/8_ehtolausekkeet/">8_Ehtolausekkeet</a></li></ul>
+    </li><li>Muut<ul><li><a href="../../muut/pathmuuttujanmuokkaus/">Path-muuttujan muokkaus</a></li><li><a href="../../muut/termeja/">Termejä</a></li></ul>
+    </li></ul></div>
+    </div>
+</body>
+
+</html>

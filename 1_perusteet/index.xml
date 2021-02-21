@@ -48,25 +48,45 @@ Visual Studio Code Koska koodin kirjoittaminen muistiolla on nykypäivänä tiet
     </item>
     
     <item>
-      <title>5_Muuttujat</title>
-      <link>/1_perusteet/5_muuttujat/</link>
+      <title>5_Tietotyypit_ja_muuttujat</title>
+      <link>/1_perusteet/5_tietotyypit_ja_muuttujat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_perusteet/5_muuttujat/</guid>
-      <description>Ohjelmoinnissa muuttujat koostuvat tunnisteesta (engl. identifier) ja muuttujan sisältämästä arvosta (eng. value). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.
+      <guid>/1_perusteet/5_tietotyypit_ja_muuttujat/</guid>
+      <description>Muuttujat Ohjelmoinnissa muuttujat koostuvat tunnisteesta (engl. identifier) ja muuttujan sisältämästä arvosta (eng. value). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.
 nimi = &amp;#34;Matti Meikäläinen&amp;#34; syntymavuosi = 1994 paino = 80.5 elossa = True Yllä olevassa esimerkissä esitellään 4 muuttujaa joihin sijoitetaan yhtäsuuruusmerkki(=) sijoitusoperaattorilla (engl. Assignment Operator) haluttu arvo.
 Alla havainnollistava taulukko neljästä esitellystä muuttujasta.
    Tunniste Arvo Tyyppi     nimi Matti Meikäläinen Merkkijono   syntymavuosi 1994 Kokonaisluku   paino 80.</description>
     </item>
     
     <item>
-      <title>6_Tyyppimuunnokset</title>
-      <link>/1_perusteet/6_tyyppimuunnokset/</link>
+      <title>6_Matemaattiset operaattorit</title>
+      <link>/1_perusteet/6_matemaattiset_operaattorit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_perusteet/6_tyyppimuunnokset/</guid>
+      <guid>/1_perusteet/6_matemaattiset_operaattorit/</guid>
+      <description>Matemaattiset operaattorit mahdollistavat erillaisten laskutoimitusten suorittamisen ohjelmakoodissa. Käytimme näistä muutamaa edellisessä osiossa käsitellessämme muuttujia, kokonaislukuja ja liukulukuja. Matemaattisten operaattorien käyttötarkoitukset eivät kuitenkaan rajoitu pelkästään perinteisiin matematiikasta tuttuihin laskutoimituksiin sillä esimerkiksi lisäysoperaattorilla on mahdollista yhdistää merkkijonoja toisiinsa ja vähennysoperaattoria voi käyttää vaikkapa päivämäärien kanssa.
+Matemaattiset operaattorit.
+   Operaattori Nimi     + lisäys   - vähennys   * kerroin   / jako   % jakojäännös   ** eksponentti      Lausekkeet (engl.</description>
+    </item>
+    
+    <item>
+      <title>7_Tyyppimuunnokset</title>
+      <link>/1_perusteet/7_tyyppimuunnokset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1_perusteet/7_tyyppimuunnokset/</guid>
       <description>merkkijonoVuosi = &amp;#34;2020&amp;#34; kokonaislukuVuosi = 2015 vuosi = merkkijonoVuosi - kokonaislukuVuosi  TypeError: unsupported operand type(s) for -: &amp;lsquo;str&amp;rsquo; and &amp;lsquo;int&amp;rsquo;
  </description>
+    </item>
+    
+    <item>
+      <title>8_Ehtolausekkeet</title>
+      <link>/1_perusteet/8_ehtolausekkeet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1_perusteet/8_ehtolausekkeet/</guid>
+      <description>Vertailu operaattorit    Operaattori Nimi     &amp;gt; suurempi kuin   &amp;lt; pienempi kuin   &amp;gt;= suurempi tai yhtäsuuri kuin   &amp;lt;= pienempi tai yhtäpieni kuin   == Yhtäsuuri / sama kuin   != Erisuuri / eri kuin    Lookiset operaattorit    Operaattori Nimi     &amp;amp;&amp;amp; suurempi kuin        </description>
     </item>
     
   </channel>

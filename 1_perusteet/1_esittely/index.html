@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html><head>
+<html lang="fi">
+<head>
     <title>Python ohjelmointiopas - 1_Esittely</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/syntax.css">
-</head><body>
+    
+    <meta name="description" content="Ohjelmoinnin perusteet Pythonilla, minimaalisella jaarittelulla.">
+    <meta name="keywords" content="Python, ohjelmointi, ohje, opas, perusteet"></head><body>
     <div class="left-window">
         <div class="content"><h1>1_Esittely</h1><h2 id="alkusanat">Alkusanat</h2>
 <p>Tämän oppaan kirjoittamisen tarkoituksena on tarjota kevyt opas ohjelmointiin <strong>Python</strong> ohjelmointikielellä. Tavoitteena on välttää turhaa jaarittelua, keskittyä oleennaiseen ja käsitellä aiheet kompaktisti takertumatta nippelitietoihin ja täten välttyä <a href="https://fi.wikipedia.org/wiki/Informaatio%C3%A4hky">informaatioähkyltä</a>.</p>
@@ -37,7 +42,7 @@
 <p>Python on korkean tason ohjelmointikieli(<strong><em>high-level language</em></strong>) joka toimii melkeinpä missä tahansa käyttöjärjestelmässä. Kielen kanssa on helppo päästä alkuun sillä se vaatii lähinnä python asennuksen ja koodia voi kirjoittaa käytännössä milla tahansa tekstieditorilla. Kieli on myös alusta alkaen suunniteltu yleisluontoiseksi ohjelmointikieleksi joten se soveltuu monipuolisesti eri tarkoituksiin.</p>
 <p>Python syntaksia pidetään yleisesti melko helposti lähestyttävänä ja kieli onnistuu piilottamaan konepeltinsä alle mittavan määrän monimutkaisuutta josta aloittelian tai peruskäyttäjän ei kannata juuri stressata. Konepellin alle on halutessaan mahdollista kurkistaa, sillä sen <a href="https://github.com/python">lähdekoodi</a> on vapaasti saatavilla.</p>
 <p>Oppassa tulen käyttämään <strong>Pythonin versiota 3.8.6</strong> mutta asiat jota opas käsittelee tuskin tulevat radikaalisti muuttumaan joten voit ladata uudemman version. Pyrin myös ottamaan <strong>Python 2</strong> poikkeavuuksia esiin jos vaikka siitä olisi apua niille epäonnisille opiskelijoille jotka joutuvat <strong>ViLLE oppimisympäristön</strong> kanssa painimaan (<em>osannottoni</em>).</p>
-<p>Tässä kohtaa voisin myös jaaritella pitkästi siitä mitä ohjelmointi on ja miten ohjelmointikielet kuten python toimivat. Esimerkkinä voisin sanoa, että Python on dynaamisesti tyypitetty(<strong>Dynamic typing</strong>), lennossa tulkattava(<strong>Interpreted language</strong>) korkean tason ohjelmointikieli(<strong><em>High-level language</em></strong>) mutta tämä ei nyt kovin hirveästi kerro henkilölle joka ei ole ohjelmointia missään muodossa harrastanut.</p>
+<p>Tässä kohtaa voisin myös jaaritella pitkästi siitä mitä ohjelmointi on ja miten ohjelmointikielet kuten python toimivat. Esimerkkinä voisin sanoa, että Python on dynaamisesti tyypitetty(<strong>engl. Dynamic typing</strong>), lennossa tulkattava(<strong>Interpreted language</strong>) korkean tason ohjelmointikieli(<strong>engl High-level language</strong>) mutta tämä ei nyt kovin hirveästi kerro henkilölle joka ei ole ohjelmointia missään muodossa harrastanut.</p>
 <h2 id="koodiesimerkkien-syntaksi">Koodiesimerkkien syntaksi</h2>
 <p>Pyrin kirjoittamaan koodiesimerkit tavalla joka on mahdollisimman yhtenäinen muiden ohjelmointikielien kanssa (esim.  Javascript/TypeScript, C#, Java ja C/C++). Koodiesimerkit eivät siis välttämättä seuraa ns. &ldquo;Pythonic&rdquo; filosofiaa.</p>
 <p>Muita ohjelmointikieliä opiskelleet huomaavat melko nopeasti, että python sisältää paljon taustalla tapahtuvaa ns. <strong>taikuutta</strong>. Taikuudella tarkoitan ohjelmointikielen tapaa piilottaa monimutkaisuutta käyttäjältä tekemällä oletuksia ja asioita automaattisesti käyttäjän tiedostamatta. Pidemmän päälle tämä on hyödyllistä sillä koodia joutuu kirjoittamaan merkittävästi vähemmän ja on täten helpompi keskittyä olennaiseen, mutta vastapainona äärimmilleen tiivistetty koodi jättää aloittelijoiden silmissä paljon kertomatta.</p>
@@ -47,7 +52,7 @@
     </div>
     <div class="right-window">
         <div class="navigation">
-            <h1><a href="../../">Python ohjelmointiopas</a></h1><ul><li>1_Perusteet<ul><li>1_Esittely</li><li><a href="../../1_perusteet/2_pythonasennus/">2_Pythonin_asennus</a></li><li><a href="../../1_perusteet/3_komentorivi/">3_Komentorivi</a></li><li><a href="../../1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/">4_Python_kehitysympäristö</a></li><li><a href="../../1_perusteet/5_muuttujat/">5_Muuttujat</a></li><li><a href="../../1_perusteet/6_tyyppimuunnokset/">6_Tyyppimuunnokset</a></li></ul>
+            <h1><a href="../../">Python ohjelmointiopas</a></h1><ul><li>1_Perusteet<ul><li>1_Esittely</li><li><a href="../../1_perusteet/2_pythonasennus/">2_Pythonin_asennus</a></li><li><a href="../../1_perusteet/3_komentorivi/">3_Komentorivi</a></li><li><a href="../../1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/">4_Python_kehitysympäristö</a></li><li><a href="../../1_perusteet/5_tietotyypit_ja_muuttujat/">5_Tietotyypit_ja_muuttujat</a></li><li><a href="../../1_perusteet/6_matemaattiset_operaattorit/">6_Matemaattiset operaattorit</a></li><li><a href="../../1_perusteet/7_tyyppimuunnokset/">7_Tyyppimuunnokset</a></li><li><a href="../../1_perusteet/8_ehtolausekkeet/">8_Ehtolausekkeet</a></li></ul>
     </li><li>Muut<ul><li><a href="../../muut/pathmuuttujanmuokkaus/">Path-muuttujan muokkaus</a></li><li><a href="../../muut/termeja/">Termejä</a></li></ul>
     </li></ul></div>
     </div>

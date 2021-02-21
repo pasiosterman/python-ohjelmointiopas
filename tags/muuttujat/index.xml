@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-FI</language><atom:link href="/tags/muuttujat/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>5_Muuttujat</title>
-      <link>/1_perusteet/5_muuttujat/</link>
+      <title>5_Tietotyypit_ja_muuttujat</title>
+      <link>/1_perusteet/5_tietotyypit_ja_muuttujat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_perusteet/5_muuttujat/</guid>
-      <description>Ohjelmoinnissa muuttujat koostuvat tunnisteesta (engl. identifier) ja muuttujan sisältämästä arvosta (eng. value). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.
+      <guid>/1_perusteet/5_tietotyypit_ja_muuttujat/</guid>
+      <description>Muuttujat Ohjelmoinnissa muuttujat koostuvat tunnisteesta (engl. identifier) ja muuttujan sisältämästä arvosta (eng. value). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.
 nimi = &amp;#34;Matti Meikäläinen&amp;#34; syntymavuosi = 1994 paino = 80.5 elossa = True Yllä olevassa esimerkissä esitellään 4 muuttujaa joihin sijoitetaan yhtäsuuruusmerkki(=) sijoitusoperaattorilla (engl. Assignment Operator) haluttu arvo.
 Alla havainnollistava taulukko neljästä esitellystä muuttujasta.
    Tunniste Arvo Tyyppi     nimi Matti Meikäläinen Merkkijono   syntymavuosi 1994 Kokonaisluku   paino 80.</description>

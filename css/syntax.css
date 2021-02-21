@@ -1,4 +1,4 @@
-/* Background */ .chroma { background-color: #1e1e1e; padding: 1em; border: #4b4b4b; border-width: 1px; border-style: solid; }
+/* Background */ .chroma { background-color: #1e1e1e; padding: 1em; border: #4b4b4b; border-width: 1px; border-style: solid; font-size: 1.2em; }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err {  }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
@@ -63,7 +63,7 @@
 /* Comment */ .chroma .c { color: #008000 }
 /* CommentHashbang */ .chroma .ch { color: #008000 }
 /* CommentMultiline */ .chroma .cm { color: #008000 }
-/* CommentSingle */ .chroma .c1 { color: #008000 }
+/* CommentSingle */ .chroma .c1 { color: #14be14 }
 /* CommentSpecial */ .chroma .cs { color: #008000 }
 /* CommentPreproc */ .chroma .cp { color: #0000ff }
 /* CommentPreprocFile */ .chroma .cpf { color: #0000ff }
