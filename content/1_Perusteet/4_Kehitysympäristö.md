@@ -10,7 +10,10 @@ Kehitysympäristöllä tarkoitetaan kokonaisuutta joka pitää sisällään kaik
 Koska koodin kirjoittaminen muistiolla on nykypäivänä tietynlaista masokismia on parempi, että lataamme siihen paremmin soveltuvan työkalun. Pythonille kirjoitushetkellä suositut valinnat ovat **Visual Studio Code (lyh. VSCode tai Code)** ja **PyCharm**. Tässä oppassa tulemme käyttämään **VSCodea** sillä editori on melko suosittu myös muita ohjelmointikieliä kirjoittaessa (esim. javascript, typescript, java, rust, go).
 
 Lataa ja asenna **VSCode** koneellesi. Asennustiedoston voi käydä latailemassa Visual Studio Coden sivuilta joihin löytyy linkki alta.
-* [Visual Studio Code - lataussivusto](https://code.visualstudio.com/)
+   * [Visual Studio Code - lataussivusto](https://code.visualstudio.com/)
+
+
+### Python laajennukset
 
 Kun asennus on valmis avaa Visual Studio Code. Avaa laajennusvalikko (**engl. Extensions**) ja hae **Python** ja **Pylance** laajennuksia. Asenna laajennukset Visual studio codeen asennuspainikkeella (**engl. Install**)
 
@@ -28,6 +31,10 @@ Kun asennus on valmis avaa Visual Studio Code. Avaa laajennusvalikko (**engl. Ex
     - Parantaa python kielen tekstin automaattista täydennystä joka nopeuttaa koodin kirjoittamista. Automaattisella täydennyksellä editori tarjoaa ehdotuksia koodia kirjoittaessa joista voi halutessaan valita täydennyksen **nuolinäppäimillä + tabilla** haluamansa tai ihan **hiirellä klikkaamalla**. 
     - Automaattisen täydennyksen ehdotukset saa esille myös näppäinyhdistelmällä **ctrl + space** 
 
+&nbsp;&nbsp;
+
+***
+
 ## Projektikansion avaaminen VSCodessa
 
 Avaa viime [osiossa](/1_perusteet/3_komentorivi/) luotu **python_opas** kansio VSCodessa. Tämä onnistuu valitsemalla ylävalikosta 
@@ -38,7 +45,9 @@ Nyt pitäisi avautua perinteinen kansion valintanäkymä josta voit navigoida Py
 
 PythonOpas kansion pitäisi avautua sisältöineen Visual Studio Codeen. 
 
-<br />
+&nbsp;&nbsp;
+
+***
 
 ## Python koodin ajaminen VSCodella
 

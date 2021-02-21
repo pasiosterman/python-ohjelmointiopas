@@ -1,5 +1,5 @@
 ---
-title: "6_Tyyppimuunnokset"
+title: "7_Tyyppimuunnokset"
 draft: false
 ---
 

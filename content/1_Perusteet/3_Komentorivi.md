@@ -9,6 +9,10 @@ Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet
 
 **Esimerkkejä:** Blender3D, Photoshop, Pelit ja niiden modaustyökalut, 
 
+&nbsp;&nbsp;
+
+***
+
 ## Peruskomentoja
 
 ```bash
@@ -37,6 +41,10 @@ rmdir testikansio
 cls
 ```
 
+&nbsp;&nbsp;
+
+***
+
 ## komentorivi vinkkejä
 
 - **Automaattinen täyttö (TAB / &#8633;)**
@@ -46,6 +54,10 @@ cls
   - Cmd komentorivin historia säilyy yleensä siihen asti kunnes cmd-ikkunan sulkee. Muut komentorivi ohjelmat saattavat säilyttää komentohistoriaa huomattavasti pidempään.
 - **Välilyönnit tiedostojen ja kansioiden nimissä.**
   -  Mikäli kansion nimessä on väli kuten **Program Files** voit kirjoittaa kansion nimen lainausmerkkeihin **cd "Program Files"**
+
+&nbsp;&nbsp;
+
+***
 
 ## Python kooditiedoston ajaminen komentoriviltä
 

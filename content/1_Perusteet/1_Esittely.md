@@ -45,7 +45,7 @@ Python syntaksia pidetään yleisesti melko helposti lähestyttävänä ja kieli
 
 Oppassa tulen käyttämään __Pythonin versiota 3.8.6__ mutta asiat jota opas käsittelee tuskin tulevat radikaalisti muuttumaan joten voit ladata uudemman version. Pyrin myös ottamaan __Python 2__ poikkeavuuksia esiin jos vaikka siitä olisi apua niille epäonnisille opiskelijoille jotka joutuvat __ViLLE oppimisympäristön__ kanssa painimaan (*osannottoni*).
 
-Tässä kohtaa voisin myös jaaritella pitkästi siitä mitä ohjelmointi on ja miten ohjelmointikielet kuten python toimivat. Esimerkkinä voisin sanoa, että Python on dynaamisesti tyypitetty(__Dynamic typing__), lennossa tulkattava(__Interpreted language__) korkean tason ohjelmointikieli(__*High-level language*__) mutta tämä ei nyt kovin hirveästi kerro henkilölle joka ei ole ohjelmointia missään muodossa harrastanut.
+Tässä kohtaa voisin myös jaaritella pitkästi siitä mitä ohjelmointi on ja miten ohjelmointikielet kuten python toimivat. Esimerkkinä voisin sanoa, että Python on dynaamisesti tyypitetty(**engl. Dynamic typing**), lennossa tulkattava(__Interpreted language__) korkean tason ohjelmointikieli(**engl High-level language**) mutta tämä ei nyt kovin hirveästi kerro henkilölle joka ei ole ohjelmointia missään muodossa harrastanut.
 
 ## Koodiesimerkkien syntaksi
 

@@ -1,9 +1,10 @@
 ---
-title: "5_Muuttujat"
+title: "5_Tietotyypit_ja_muuttujat"
 draft: false
 tags: [muuttujat, merkkijono, kokonaisluku]
 ---
- 
+
+## Muuttujat
 Ohjelmoinnissa muuttujat koostuvat tunnisteesta (__engl. identifier__) ja muuttujan sisältämästä arvosta (__eng. value__). Pythonissa uuden muuttujan voi esitellä esimerkiksi seuraavilla tavoilla.
 
 ```python
@@ -161,20 +162,25 @@ Otetaan esimerkkinä vaikka tapaus jossa halutaan tieto siitä onko luku1 pienem
 ```python
 # sijoitetaan luku1 muuttujaan kokonaisluku 2
 luku1 = 2
-
 # sijoitetaan luku2 muuttujaan kokonaisluku 1
 luku2 = 1
 
 # verrataan onko luku1 suurempi kuin luku2
 # sijoitetaan lopptulos suurempi nimiseen muuttujaan
 suurempi = luku1 > luku2
+print(suurempi)
+# tulostaa: True
+```
+
+```python
+# sijoitetaan luku1 muuttujaan kokonaisluku 2
+luku1 = 10
+# sijoitetaan luku2 muuttujaan kokonaisluku 1
+luku2 = 5
 
 # verrataan onko luku1 pienempi kuin luku2
 # sijoitetaan lopputulos pienempi nimiseen muuttujaan.
 pienempi = luku1 < luku2
-
-print(suurempi)
-# tulostaa: True
 print(pienempi)
 # tulostaa: False
 ```
@@ -183,8 +189,12 @@ print(pienempi)
 
 # Merkkijono (**engl. String**)
 
-Merkkijonoja voi ajatella tekstille tarkoitettuna tietotyyppinä. Teknisesti kyseessä on yksiulotteinen taulukko mikä voi sisältää melkeinpä mitä vain kirjaimia, merkkejä ja numeroita.
-Ohjelmakoodissa merkkijonon voi alustaa kirjoittamalla tekstiä lainausmerkkien(**""**) sisään. 
+Merkkijonoja voi ajatella tekstille tarkoitettuna tietotyyppinä. Teknisesti kyseessä on yksiulotteinen taulukko mikä voi sisältää kirjaimia, merkkejä ja numeroita.
+Ohjelmakoodissa merkkijono on mahdollista esitellä kirjoittamalla tekstiä lainausmerkkien(**""**) tai heittomerkkien (**''**) sisään. 
+
+```python
+tervehdys = "Terve maailma!"
+```
 
 **Havainnollistava taulukko merkkijonosta "Terve maailma!":**
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 14 | 
@@ -194,43 +204,71 @@ Ohjelmakoodissa merkkijonon voi alustaa kirjoittamalla tekstiä lainausmerkkien(
 Taulukot tai pythonin tapauksessa listat käsitellään myöhemmässä osiossa.
 
 ```python
-# sijoitetaan merkkijono Terve muuttujaan "tervehdys"
-tervehdys = "Terve"
-# lisätään merkkijono tervehdykseen merkkijono " maailma!"
-# huom: myös välilyönti on merkki.
-tervehdys = tervehdys + " maailma!"
-# sijoitetaan muuttujaan merkkijonon seitsemäs merkki
+# sijoitetaan tervehdys muuttujaan merkkijono arvolla "tervehdys"
+tervehdys = "Terve maailma!"
+print(tervehdys)
+# tulostaa Terve Maailma!
+
+# sijoitetaan kirjain muuttujaan merkkijonon seitsemäs merkki
 # järjestysnumero on 6 koska taulukko alkaa nollasta.
 kirjain = tervehdys[6]
 
-print(tervehdys)
-# tulostaa Terve Maailma!
 print("merkki: " + kirjain)
 # tulostaa merkki: m
 ```
 
-### Pakomerkki (**engl. Escape character**)
-
-Pakomerkkinä Pythonissa toimii vinoviiva(**/**) ja sen avulla on mahdollista lisätä merkkijonoon mm. rivivaihtoja(**\n**) ja tabulaattori painalluksia(**\t**). Pakomerkit mahdollistavat myös lainausmerkkien käyttämisen merkkijonoissa (**\"**). 
-
 ```python
-# sijoitetaan merkkijono jossa on lainausmerkkejä sananlasku muuttujaan
-sananlasku = "Sananlasku: \"Ei kukaan ole seppä syntyessään\""
-# sijoiteaan merkkijono jossa on rivinvaihto monirivi muuttujaan
-monirivi = "eka rivi \ntoka rivi"
-# sijoitetaan merkkijono jossa on sarkain siirtymä sarkain muuttujaan
-sarkain = "\t tabulaattori painallus"
+# Sijoitetaan tervehdys muuttujaan merkkijono arvolla "tervehdys"
+tervehdys = "Terve maailma!"
+# Sijoitetaan kirjain muuttujaan tervehdys merkkijonon seitsemäs merkki
+# järjestysnumero on 6 koska taulukko alkaa nollasta.
+kirjain = tervehdys[6]
 
-print(sananlasku)
-# tulostaa: Sananlasku: "Ei kukaan ole seppä syntyessään"
-print(monirivi)
-# tulostaa: 
+print("merkki: " + kirjain)
+# tulostaa merkki: m
+```
+
+### Pakomerkki merkkijonoissa (**engl. Escape character**)
+
+Pakomerkkinä Pythonissa toimii kenoviiva(__\\__). Pakomerkkien avulla on mahdollista lisätä merkkijonoon rivinvaihtoja, sarkain siirtymiä ja erikoismerkkejä. Pakomerkit mahdollistavat myös lainausmerkkien tai heittomerkkien käytön merkkijonossa jotka normaalisti katkaisisivat merkkijonon esittelyn. 
+
+**Lainausmerkit pakomerkillä (\\")**
+```python
+# sijoitetaan tuloste muuttujaan merkkijono jossa on lainausmerkkejä.
+tuloste = "Sananlasku: \"Ei kukaan ole seppä syntyessään\""
+print(tuloste)
+# Tulostaa: 
+# Sananlasku: "Ei kukaan ole seppä syntyessään"
+```
+
+**Rivivaihto pakomerkillä (\n)**
+```python
+# Sijoiteaan tuloste muuttujaan merkkijono jossa on rivinvaihto.
+tuloste = "eka rivi \ntoka rivi"
+print(tuloste)
+# Tulostaa: 
 #eka rivi
 #toka rivi
-print(sarkain)
+```
+
+**Sarkainsiirtymä pakomerkillä (\t)**
+```python
+# Sijoitetaan tuloste muuttujaan merkkijono jossa on sarkain siirtymä.
+tuloste = "\t tabulaattori painallus."
+print(tuloste)
 # Tulostaa
         #Tabulaattori painallus
 ```
+
+**Erikoismerkki pakomerkillä (\u+koodi)**
+```python
+# Sijoitetaan tuloste muuttujaan merkkijono jossa on tekijänoikeusmerkki.
+tuloste = "erikoismerkki: \u00a9 "
+print(tuloste)
+```
+
+Tulostaa:
+erikoismerkki &copy;
 
 ### Monirivinen  merkkijono
 
