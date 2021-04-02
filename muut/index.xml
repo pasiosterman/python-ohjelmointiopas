@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-FI</language><atom:link href="/muut/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Komentorivi</title>
+      <link>/muut/komentorivi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/muut/komentorivi/</guid>
+      <description>Graafisiin käyttöliittymiin tottuneille komentorivi saattaa kuulostaa suorastaan antiikkiselta, mutta todellisuudessa komentoriviä käytetään enemmän kuin koskaan. Suurin syy tähän on kasvanut tarve automatisoida asioita erilaisten komentosarjojen avulla. Toisena syynä on halu jakaa sovellukset pienempiin helpommin hallittaviin osiin jolloin graafinen käyttöliittymä voi toimia erillisenä kokonaisuutena jonka voi tarvittaessa vaihtaa toiseen.
+Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toimintoihin jotä ei perus käyttöliittymästä välttämättä löydy.</description>
+    </item>
+    
+    <item>
       <title>Path-muuttujan muokkaus</title>
       <link>/muut/pathmuuttujanmuokkaus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

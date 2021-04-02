@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <title>Python ohjelmointiopas - 2_Pythonin_asennus</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/syntax.css">
+    
+    <meta name="description" content="Ohjelmoinnin perusteet Pythonilla, minimaalisella jaarittelulla.">
+    <meta name="keywords" content="Python, ohjelmointi, ohje, opas, perusteet"></head><body>
+    <div class="left-window">
+        <div class="content"><h1>2_Pythonin_asennus</h1><p>Jotta python koodi saadaan tulkattua tietokoneen ymmärtämään muotoon tarvitaan Python tulkki joka löytyy Python asennuksesta. Oppassa tulen käyttämään <a href="https://www.python.org/downloads/release/python-386/">Pythonin versiota 3.8.6.</a></p>
+<p>Asiat jota opas käsittelee tuskin muuttuvat merkittävästi joten voit halutessasi käyttää myös uudempaa versiota. Python asennustiedoston voi ladata eri käyttöjärjestelmille suoraan Pythonin kotisivulta <a href="https://www.python.org/">https://www.python.org/</a>.</p>
+<h2 id="python-asennus---windows">Python asennus - Windows</h2>
+<p>Lataa python asennustiedosto Pythonin sivuilta ja kaksoisklikkaa lataamaasi <strong>python-3.x.x.exe</strong> asennustiedostoa. Windows saattaa kysyä &ldquo;haluatko suorittaa tämän tiedoston?&rdquo; johon vastaa suorita. Tämän jälkeen pitäisi näkyä allaoleva ikkuna.</p>
+<p>Rastita kohta <strong>Add Python &lt;versio&gt; to Path</strong> ja paina Install Now.</p>
+<p><img src="../../kuvat/perusteet/python-asennus.png" alt="Python asennus"></p>
+<p>Tämän jälkeen ohjelman pitäisi asentaa Python koneellesi ja lisätä Python.exe tiedostopolun automaattisesti Windowsin Path ympäristömuuttujaan joka mahdollistaa Pythonin ajamista komentoriviltä.</p>
+<h3 id="asennuksen-testaus">Asennuksen testaus</h3>
+<p>Avaa komentorivisovellus kuten cmd, powershell tai Windows Terminal ja kirjoita siihen seuraava komento ja paina enter. Tämän pitäisi tulostaa asennettu python versio komentoriville. Jos versio vastaa versiota jonka asensit voi tästä päätellä että asennus ja pythonin lisääminen PATH ympäristömuuttujaan on onnistunut.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">python --version
+</code></pre></div><p>Voit kokeilla myös seuraavilla komennoilla sillä välillä Python tulee esiasennettuna tietokoneelle tai jonkun muun sovelluksen mukana.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">py --version
+python3 --version
+</code></pre></div><p><img src="../../kuvat/perusteet/python-versio-cmd.png" alt="Python versio komentorivillä"></p>
+<p>Mikäli kaikki toimii tähän mennessä voit jatkaa seuraavaan osioon. Ongelmatilanteissa voit katsoa josko ratkaisu löytyy alhaalta.</p>
+<h2 id="yleisiä-ongelmatilanteita---windows">Yleisiä ongelmatilanteita - Windows</h2>
+<h3 id="python-komentoa-ei-tunnisteta">Python komentoa ei tunnisteta</h3>
+<p>Mikäli asennuksen jälkeen python &ndash;version komento tulostaa seuraavan virhesanoman, tarkoittaa tämä että Pythonia ei löydy Path ympäristömuuttujasta.</p>
+<pre><code>Komentoa python ei tunnistettu sisäiseksi tai ulkoiseksi komennoksi, suoritettavaksi ohjelmaksi tai komentojonotiedostoksi.
+
+python is not recognized as an internal or external command, operable program or batch file. 
+</code></pre><p>Todennäköisesti unohdit rastittaa asennuksen yhteydessä kohdan <strong>Add Python &lt;versio&gt; to Path</strong>. Tämän lisääminen onnistuu kuitenkin jälkikäteen ajamalla <strong>python-3.x.x.exe</strong> asennustiedosto uudestaan ja valitsemalla modify. Modify osiossa paina next ja valitse advanced options kohdasta Add <strong>Python to environment variables</strong> ja install.</p>
+<p><img src="../../kuvat/perusteet/python-asennuksen-muokkaus.png" alt="Python asennuksen muokkaus"></p>
+<p>Vaihtoehtoisesti voit käydä muokkaamassa PATH ympäristömuuttujaa käsin. Ohje tähän löytyy osiosta <a href="../../muut/pathmuuttujanmuokkaus">Windows - Python ympäristömuuttujan lisäys</a>.</p>
+<h3 id="python-komento-avaa-python-sivun-windows-store-kauppapaikalta">Python komento avaa Python sivun Windows Store kauppapaikalta</h3>
+<p>Microsoft on päättänyt jostain syystä lisätä Python ja Python3 komennoille aliakset jotka avaavat Windows Store kauppasivun pythonille kun komennot kirjoitetaan. Nämä saa pois päältä hakemalla käynnistä valikosta <strong>&ldquo;App execution aliases&rdquo;</strong> asetuksia. Ikkunassa säädä <strong>App Installer python.exe</strong> ja <strong>python3.exe</strong> valinnat pois päältä.</p>
+<h3 id="python-komenon-versio-on-eri-kuin-asennettu">Python komenon versio on eri kuin asennettu</h3>
+<p>Koneelle on todennäköisesti asennettu eri versio Pythonista jo aikaisemmin. Tämän asennuksen sijainnin saa selville komentoriviltä Windowsin <strong>where.exe</strong> sovelluksen avulla.</p>
+<div class="highlight"><pre class="chroma"><code class="language-batch" data-lang="batch">where.exe python
+</code></pre></div><p><img src="../../kuvat/perusteet/where-python.png" alt="where-komento"></p>
+<p>Tässä tilanteessa voit:</p>
+<ol>
+<li>Poistaa vanhan version lisää ja poista sovelluksen avulla.</li>
+<li>Muokata käsin PATH ympäristömuuttujaa poistamalla siitä polun vanhaan python versioon.</li>
+<li>Muokata käsin PATH ympäristömuuttujaa listaamalla uuden Python version ennen vanhaa Python versiota.</li>
+<li>Käyttää vanhempaa versiota mikäli se ei ole kovin paljoa vanhempi.</li>
+</ol>
+<p>Lisää tietoa ympäristömuuttujista löytää <a href="../../muut/pathmuuttujanmuokkaus">Windows - Python ympäristömuuttujan lisäys</a> osiossa.</p>
+
+        </div>
+    </div>
+    <div class="right-window">
+        <div class="navigation">
+            <h1><a href="../../">Python ohjelmointiopas</a></h1><ul><li>1_Perustoot<ul><li><a href="../../1_perusteet/1_esittely/">1_Esittely</a></li><li>2_Pythonin_asennus</li><li><a href="../../1_perusteet/4_vscode/">4_Visual_Studio_Code</a></li><li><a href="../../1_perusteet/5_tietotyypit_ja_muuttujat/">5_Tietotyypit_ja_muuttujat</a></li><li><a href="../../1_perusteet/6_matemaattiset_operaattorit/">6_Matemaattiset operaattorit</a></li><li><a href="../../1_perusteet/7_tyyppimuunnokset/">7_Tyyppimuunnokset</a></li><li><a href="../../1_perusteet/8_ehtolausekkeet/">8_Ehtolausekkeet</a></li></ul>
+    </li><li>Muut<ul><li><a href="../../muut/komentorivi/">Komentorivi</a></li><li><a href="../../muut/pathmuuttujanmuokkaus/">Path-muuttujan muokkaus</a></li><li><a href="../../muut/termeja/">Termejä</a></li></ul>
+    </li></ul></div>
+    </div>
+</body>
+
+</html>

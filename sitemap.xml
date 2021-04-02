@@ -1,74 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/1_perusteet/1_esittely/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/1_perusteet/</loc>
-  </url>
-  
-  <url>
-    <loc>/1_perusteet/2_pythonasennus/</loc>
-  </url>
-  
-  <url>
-    <loc>/1_perusteet/3_komentorivi/</loc>
-  </url>
-  
-  <url>
-    <loc>/1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/1_perusteet/2_python_asennus/</loc>
+  </url><url>
+    <loc>/1_perusteet/4_vscode/</loc>
+  </url><url>
     <loc>/1_perusteet/5_tietotyypit_ja_muuttujat/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/1_perusteet/6_matemaattiset_operaattorit/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/1_perusteet/7_tyyppimuunnokset/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/1_perusteet/8_ehtolausekkeet/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/kokonaisluku/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/muut/komentorivi/</loc>
+  </url><url>
     <loc>/tags/merkkijono/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/muut/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/muuttujat/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/muut/pathmuuttujanmuokkaus/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/muut/termeja/</loc>
   </url>
-  
 </urlset>

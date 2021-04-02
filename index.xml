@@ -13,36 +13,26 @@
       
       <guid>/1_perusteet/1_esittely/</guid>
       <description>Alkusanat Tämän oppaan kirjoittamisen tarkoituksena on tarjota kevyt opas ohjelmointiin Python ohjelmointikielellä. Tavoitteena on välttää turhaa jaarittelua, keskittyä oleennaiseen ja käsitellä aiheet kompaktisti takertumatta nippelitietoihin ja täten välttyä informaatioähkyltä.
-Kirjoitan oppaan suomeksi sillä uskon että ohjelmoinnin perusteet on helpompi sisäistää omalla äidinkielellän. Tulen käyttämään suomen kieltä myös koodissa mikä mielestäni toimii erinomaisesti korostamaan asioita jotka käyttäjä voi ohjelmakoodissa nimetä haluamallaan tavalla. Tulen kuitenkin tuomaan englanninkieliset termit aktiivisesti tekstissä esille jotta myös englanninkieliset termit tulevat tutuksi.</description>
+Kirjoitan oppaan suomeksi sillä uskon että ohjelmoinnin perusteet on helpompi sisäistää omalla äidinkielellän. Tulen käyttämään suomea myös koodiesimerkeissä korostaakseni asioita koodista jotka voi itse nimetä haluamallaan tavalla. Suosittelen silti käyttämään ohjelmoinnissa pääsääntöisesti englantia jotta koodi on helpommin ymmärrettävää myös heille jotka eivät välttämättä ymmärrä suomea.</description>
     </item>
     
     <item>
       <title>2_Pythonin_asennus</title>
-      <link>/1_perusteet/2_pythonasennus/</link>
+      <link>/1_perusteet/2_python_asennus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_perusteet/2_pythonasennus/</guid>
-      <description>Tietokone ei ymmärrä Python koodia sellaisenaan joten tarvitsemme tulkin (Python interpreter) jonka avulla koodin suorittaminen onnistuu. Tämä kuuluu python asennustiedostoon jonka voi ladata Pythonin sivuilta. Pythonin voi löytää myös Windows kauppapaikalta ja Linuxilla paketinhallintajärjestelmästä.
- Linkki Pythonin sivuille  Asennuksen yhteydessä rastita kohta Add Python *versio* to Path.
-Mikäli tämä unohtuu voit muokata asennusta ajamalla asennustiedoston uudestaan ja valitsemalla modify. Modify osiossa paina next ja valitse advanced options kohdasta Add Python to environment variables ja install.</description>
+      <guid>/1_perusteet/2_python_asennus/</guid>
+      <description>Jotta python koodi saadaan tulkattua tietokoneen ymmärtämään muotoon tarvitaan Python tulkki joka löytyy Python asennuksesta. Oppassa tulen käyttämään Pythonin versiota 3.8.6.
+Asiat jota opas käsittelee tuskin muuttuvat merkittävästi joten voit halutessasi käyttää myös uudempaa versiota. Python asennustiedoston voi ladata eri käyttöjärjestelmille suoraan Pythonin kotisivulta https://www.python.org/.
+Python asennus - Windows Lataa python asennustiedosto Pythonin sivuilta ja kaksoisklikkaa lataamaasi python-3.x.x.exe asennustiedostoa. Windows saattaa kysyä &amp;ldquo;haluatko suorittaa tämän tiedoston?&amp;rdquo; johon vastaa suorita. Tämän jälkeen pitäisi näkyä allaoleva ikkuna.</description>
     </item>
     
     <item>
-      <title>3_Komentorivi</title>
-      <link>/1_perusteet/3_komentorivi/</link>
+      <title>4_Visual_Studio_Code</title>
+      <link>/1_perusteet/4_vscode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_perusteet/3_komentorivi/</guid>
-      <description>Graafisiin käyttöliittymiin tottuneille komentorivi saattaa kuulostaa suorastaan antiikkiselta, mutta todellisuudessa komentoriviä käytetään enemmän kuin koskaan. Suurin syy tähän on kasvanut tarve automatisoida asioita erilaisten komentosarjojen avulla. Toisena syynä on halu jakaa sovellukset pienempiin helpommin hallittaviin osiin jolloin graafinen käyttöliittymä voi toimia erillisenä kokonaisuutena jonka voi tarvittaessa vaihtaa toiseen.
-Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toimintoihin jotä ei perus käyttöliittymästä välttämättä löydy.</description>
-    </item>
-    
-    <item>
-      <title>4_Python_kehitysympäristö</title>
-      <link>/1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1_perusteet/4_kehitysymp%C3%A4rist%C3%B6/</guid>
+      <guid>/1_perusteet/4_vscode/</guid>
       <description>Kehitysympäristöllä tarkoitetaan kokonaisuutta joka pitää sisällään kaikki joko kielen, alustan tai ohjelmistokehyksen kannalta oleelliset työkalut. Yksinkertaisimmillaan tähän kokonaisuuteen kuuluu tekstinkäsittelyohjelma jolla koodia kirjoitetaan, tulkki tai kääntäjä jolla ohjelmakoodia muutetaan tietokoneen ymmärtämään muotoon.
 Visual Studio Code Koska koodin kirjoittaminen muistiolla on nykypäivänä tietynlaista masokismia on parempi, että lataamme siihen paremmin soveltuvan työkalun. Pythonille kirjoitushetkellä suositut valinnat ovat Visual Studio Code (lyh. VSCode tai Code) ja PyCharm. Tässä oppassa tulemme käyttämään VSCodea sillä editori on melko suosittu myös muita ohjelmointikieliä kirjoittaessa (esim.</description>
     </item>
@@ -87,6 +77,16 @@ Matemaattiset operaattorit.
       
       <guid>/1_perusteet/8_ehtolausekkeet/</guid>
       <description>Vertailu operaattorit    Operaattori Nimi     &amp;gt; suurempi kuin   &amp;lt; pienempi kuin   &amp;gt;= suurempi tai yhtäsuuri kuin   &amp;lt;= pienempi tai yhtäpieni kuin   == Yhtäsuuri / sama kuin   != Erisuuri / eri kuin    Lookiset operaattorit    Operaattori Nimi     &amp;amp;&amp;amp; suurempi kuin        </description>
+    </item>
+    
+    <item>
+      <title>Komentorivi</title>
+      <link>/muut/komentorivi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/muut/komentorivi/</guid>
+      <description>Graafisiin käyttöliittymiin tottuneille komentorivi saattaa kuulostaa suorastaan antiikkiselta, mutta todellisuudessa komentoriviä käytetään enemmän kuin koskaan. Suurin syy tähän on kasvanut tarve automatisoida asioita erilaisten komentosarjojen avulla. Toisena syynä on halu jakaa sovellukset pienempiin helpommin hallittaviin osiin jolloin graafinen käyttöliittymä voi toimia erillisenä kokonaisuutena jonka voi tarvittaessa vaihtaa toiseen.
+Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet käyttäjät voivat muokata ohjelman toiminnallisuutta, automatisoida toistuvia vaiheita ja päästä käsiksi toimintoihin jotä ei perus käyttöliittymästä välttämättä löydy.</description>
     </item>
     
     <item>
