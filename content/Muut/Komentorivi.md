@@ -1,7 +1,9 @@
 ---
-title: "3_Komentorivi"
+title: "Komentorivi"
 draft: false
 ---
+
+
 
 Graafisiin käyttöliittymiin tottuneille komentorivi saattaa kuulostaa suorastaan antiikkiselta, mutta todellisuudessa komentoriviä käytetään enemmän kuin koskaan. Suurin syy tähän on **kasvanut tarve automatisoida asioita** erilaisten komentosarjojen avulla. Toisena syynä on **halu jakaa sovellukset pienempiin helpommin hallittaviin osiin** jolloin graafinen käyttöliittymä voi toimia erillisenä kokonaisuutena jonka voi tarvittaessa vaihtaa toiseen. 
 
@@ -13,7 +15,7 @@ Monesta ohjelmasta löytyy myös sisäänrakennettu komentorivi jolla edistyneet
 
 ***
 
-## Peruskomentoja
+## Peruskomentoja (**Powershell,  Windows CMD**)
 
 ```bash
 # siirtyy aseman juureen esim. c:/
@@ -39,6 +41,16 @@ rmdir testikansio
 
 # tyhjentää komentorivi syötteet
 cls
+```
+
+## Peruskomentoja (**Linux bash, Mac Terminal**)
+```bash
+
+# listaa nykyisen kansion tai aseman sisältämät tiedostot ja kansiot.
+ls
+
+
+
 ```
 
 &nbsp;&nbsp;
